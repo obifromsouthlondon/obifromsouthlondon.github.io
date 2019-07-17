@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <script
+            type="text/javascript"
+            src="/js/lib/dummy.js"
+
+    ></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/signature_pad@3.0.0-beta.3/dist/signature_pad.umd.min.js"></script>
+
+    <style id="compiled-css" type="text/css">
+        .wrapper {
+            position: relative;
+            width:  1000px;
+            height: 555px;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+			margin: auto;
+        }
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .signature-pad {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 1000px;
+            height:555px;
+			margin: auto;
+        }
+    </style>
+
+
+    <!-- TODO: Missing CoffeeScript 2 -->
+
+    <script type="text/javascript">//<![CDATA[
+
+    window.onload=function(){
+
+        var signaturePad = new SignaturePad(document.getElementById('signature-pad'), {
+            backgroundColor: 'rgba(255, 255, 255, 0)',
+            penColor: 'rgb(0, 0, 0)'
+        });
+        var cancelButton = document.getElementById('clear');
+
+        cancelButton.addEventListener('click', function (event) {
+            signaturePad.clear();
+        });
+		
+        document.getElementById('undo').addEventListener('click', function () {
+			var data = signaturePad.toData();
+			if (data) {
+				data.pop(); // remove the last dot or line
+				signaturePad.fromData(data);
+			}
+		});
+    }
+
+    //]]></script>
+
+</head>
+<body>
+<div class="wrapper">
+    <img src="CRF.jpg" width="1000px" height="555px"/>
+    <canvas id="signature-pad" class="signature-pad" width="1000px" height="555px"></canvas>
+</div>
+<div>
+    <button id="clear">Clear</button>
+	<button id="undo">Undo</button>
+</div>
+
+
+<script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+        window.parent.parent.postMessage(["resultsFrame", {
+            height: document.body.getBoundingClientRect().height,
+            slug: "d6a78gwq"
+        }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+</script>
+</body>
+</html>
