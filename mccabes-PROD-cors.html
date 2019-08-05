@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://skincarehelp.mccabespharmacy.com/custom/favicons/favicon.ico" type="image/x-icon" rel="shortcut icon">
+
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+    <link href="https://s3-eu-west-1.amazonaws.com/ngc-dev/prod14/McCabes%20Pharmacy/CSS/load.css" rel="stylesheet" type="text/css" />
+    <link href="https://skincarehelp.mccabespharmacy.com/applications/css/frontend.1.5.12.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://skincarehelp.mccabespharmacy.com/applications/css/frontend-3rd-party.min.css" rel="stylesheet" type="text/css" />
+    <script>
+        // This is callback method. Will be executed RIPPL external libraries loading.
+        function librariesLoaded() {
+        }
+    </script>
+    <script src="https://skincarehelp.mccabespharmacy.com/service/remote/load-remote-libraries?callback=librariesLoaded"></script>
+	
+</head>
+
+<style>
+   #ngc-container .scrollScreen {
+       height: auto;
+       padding: 0;
+       width: 100%;
+       position: static;
+       overflow-y: visible;
+   }
+   div{box-sizing:border-box;}
+</style>
+
+
+<body style="margin:0; padding:0; width:100%; overflow:auto; height:100%; position:static;">
+
+    <!-- New Code - Begin -->
+	<iframe style="display:none;" id="dummyframe" name="dummyframe" src=""></iframe>
+	
+	<form style="display:none;" action="https://www.mccabespharmacy.com/conversity/cart/add/" id="myForm" method="post" target="dummyframe">
+		<input id="sku" name="sku" type="hidden" value="" />
+		<input id="qty" name="qty" type="hidden" value="" />
+	</form>
+	<!-- New Code - End -->
+
+	
+    <div><h1 style="color: grey !important">This is Rippl in div container:</h1></div>
+    <div id="ngc-container" style="border: 1px solid grey; width:100% !important; height:1200px !important; overflow: auto;"></div>
+
+    <script>
+        // This is callback method. Will be executed after RIPPL content loading.		
+		function processLoaded() {
+			sessionStorage.setItem('rippl_token', globalWrapperVariables.token);
+        }
+
+        $(window).load(function() {
+            loadEmbedded();
+        });
+
+        function loadEmbedded() {
+            $.ajax({
+                url: 'https://skincarehelp.mccabespharmacy.com/service/remote/get-process-view?viewId=SYSV1&callback=processLoaded',							
+				crossDomain: true,
+				xhrFields: {
+				  withCredentials: true
+				},				
+                success: function (html) {
+                    $("#ngc-container").html(html);
+                }
+            });
+        }
+    </script>
+</body>
+</html>
