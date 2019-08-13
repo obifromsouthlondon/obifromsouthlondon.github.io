@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://uat-mccabespharmacy-public.conversity.com/custom/favicons/favicon.ico" type="image/x-icon" rel="shortcut icon">
+
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+	<link href="https://uat-mccabespharmacy-public.conversity.com/applications/css/frontend.1.5.12.min.css" rel="stylesheet" type="text/css" />
+	<link href="https://uat-mccabespharmacy-public.conversity.com/applications/css/frontend-3rd-party.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://s3-eu-west-1.amazonaws.com/ngc-dev/uat/McCabes%20Pharmacy/CSS/load.css" rel="stylesheet" type="text/css" />
+    
+    
+    <script>
+        // This is callback method. Will be executed RIPPL external libraries loading.
+        function librariesLoaded() {
+        }
+    </script>
+    <script src="https://uat-mccabespharmacy-public.conversity.com/service/remote/load-remote-libraries?callback=librariesLoaded"></script>
+
+</head>
+
+
+<body style="margin:0; padding:0; width:100%; overflow:auto; height:100%; position:static;">
+
+    <!-- New Code - Begin -->
+	<iframe style="display:none;" id="dummyframe" name="dummyframe"></iframe>
+	
+	<form style="display:none;" action="https://uat.mccabespharmacy.com/conversity/cart/add/" id="myForm" method="post" target="dummyframe">
+		<input id="sku" name="sku" type="hidden" value="" />
+		<input id="qty" name="qty" type="hidden" value="" />
+	</form>
+	<!-- New Code - End -->
+
+    <div id="ngc-container"></div>
+
+    <script>
+        // This is callback method. Will be executed after RIPPL content loading.
+        function processLoaded() {
+			sessionStorage.setItem('rippl_token', globalWrapperVariables.token);
+        }
+
+        $(window).load(function() {
+            loadEmbedded();
+        });
+
+        function loadEmbedded() {
+            $.ajax({
+                url: 'https://uat-mccabespharmacy-public.conversity.com/service/remote/get-process-view?viewId=SYSV1&callback=processLoaded',
+                success: function (html) {
+                    $("#ngc-container").html(html);
+                }
+            });
+        }
+    </script>
+</body>
+</html>
