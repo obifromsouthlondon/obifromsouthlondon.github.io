@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link href="https://uat-phonecoop-admin.conversity.com/custom/favicons/favicon.ico" type="image/x-icon" rel="shortcut icon">
-    <title>Add To Basket</title>
+    <title>Add To Basket (SIM Only)</title>
   </head>
   <body>
     <p>
@@ -14,32 +14,33 @@
       <p>__csrfToken</p>
       <input size="100" type="text" name="__csrfToken" value="D9ACA3C978FC673885B610966FFAE3BB9E296C38AC80FB7CA1C053F9427DCC0EFF"/> <br>
       <p>SIM</p>
+      <!-- constant -->
       <input type="text" name="basket_addtobasketoption_enabled" id="basket_addtobasketoption_enabled" value="1" /><br>
+      <!-- from Service SIMO file, column ProductID -->
       <input type="text" name="basket_1_productid" id="basket_1_productid" value="412" /><br>
+      <!-- from Service SIMO file, column CategoryID -->
       <input type="text" name="basket_1_productcategoryid" id="basket_1_productcategoryid" value="87" /><br>
+      <!-- constant -->
       <input type="text" name="basket_1_quantity" id="basket_1_quantity" value="1" /><br>
       <input type="text" name="basket_category" id="basket_category" value="87" /><br>
+      <!-- constant -->
       <input type="text" name="basket_1_addtobasket" id="basket_1_addtobasket"  value="1"><br>
+      <!-- constant -->
       <input type="text" name="custom_basket_attribute_1_IsCoopParent" id="custom_basket_attribute_1_IsCoopParent" value="1"/><br>
-      <input type="text" name="accessorytypes" value="1" /><br>
-      <input type="text" name="accessorytypecount_1" value="1" /><br>
-      <!-- SIM constants -->
+      <!-- constant -->
       <input type="text" name="custom_basket_attribute_1_Type" id="custom_basket_attribute_1_Type" value="Service" /><br>
-      <!--
-      <input type="text" name="custom_basket_attribute_1_Feature1" id="custom_basket_attribute_1_Feature1" value="16GB" /><br>
-      <input type="text" name="custom_basket_attribute_1_Feature2" id="custom_basket_attribute_1_Feature2" value="Black" /><br>
-      <input type="text" name="custom_basket_attribute_1_Feature3" id="custom_basket_attribute_1_Feature3" value="8MP Camera" /><br>
-      -->
 
       <p>Mobile Limit</p>
+      <!-- constant -->
       <input type="text" name="basket_2_productid" id="basket_2_productid" value="678" /><br>
+      <!-- from Service SIMO file, column CategoryID -->
       <input type="text" name="basket_2_productcategoryid" id="basket_2_productcategoryid" value="87" /><br>
+      <!-- constant -->
       <input type="text" name="basket_2_addtobasket" id="basket_2_addtobasket" value="1" /><br>
+      <!-- constant -->
       <input type="text" name="custom_basket_attribute_2_IsCoopParent" id="custom_basket_attribute_2_IsCoopParent" value="0"/><br>
-
-      <input type="text" name="accessorytyperequired_1" id="accessorytyperequired_1" value="yes"/><br>
+      <!-- constant -->
       <input type="text" name="basket_count" id="basket_count" value="2"/><br>
-      <input type="text" name="Submit" id="Submit" value="Add+To+Basket"/><br>
 
       <input type="submit" value="Add To Basket" />
     </form>
