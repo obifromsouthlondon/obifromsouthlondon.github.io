@@ -9,16 +9,8 @@
     <meta name="googlebot" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-    <script
-            type="text/javascript"
-            src="/js/lib/dummy.js"
-
-    ></script>
-
-    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
-
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/signature_pad@3.0.0-beta.3/dist/signature_pad.umd.min.js"></script>
+	<script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 
     <style id="compiled-css" type="text/css">
         .wrapper {
@@ -51,17 +43,34 @@
     <!-- TODO: Missing CoffeeScript 2 -->
 
     <script type="text/javascript">//<![CDATA[
+	
+	function captureScreen(){
+		html2canvas(document.querySelector("#wrapper"), {
+			dpi: 192,
+			allowTaint: true,
+			useCors: true
+		}).then(canvas => {
+			window.open(canvas.toDataURL());
+		});
+	}
 
     window.onload=function(){
 
         var signaturePad = new SignaturePad(document.getElementById('signature-pad'), {
-            backgroundColor: 'rgba(255, 255, 255, 0)',
+            // backgroundColor: 'rgba(255, 255, 255, 0)',
+			backgroundImage: '1.png', 
             penColor: 'rgb(0, 0, 0)'
         });
         var cancelButton = document.getElementById('clear');
 
         cancelButton.addEventListener('click', function (event) {
             signaturePad.clear();
+        });
+		
+		var captureButton = document.getElementById('captureButton');
+
+        captureButton.addEventListener('click', function (event) {
+            captureScreen();
         });
 		
         document.getElementById('undo').addEventListener('click', function () {
@@ -71,13 +80,37 @@
 				signaturePad.fromData(data);
 			}
 		});
+		
+		var savePNGButton = document.getElementById('savePNGButton');
+		
+		savePNGButton.addEventListener("click", function (event) {
+			if (signaturePad.isEmpty()) {
+				alert("Please provide signature first.");
+			} else {
+				var dataURL = signaturePad.toDataURL();
+				console.log("data url", dataURL);
+				window.open(signaturePad.toDataURL());
+			}
+		});		
+		
+		var saveSVGButton = document.getElementById('saveSVGButton');
+		
+		saveSVGButton.addEventListener("click", function (event) {
+			if (signaturePad.isEmpty()) {
+				alert("Please provide signature first.");
+			} else {
+				var dataURL = signaturePad.toDataURL('image/svg+xml');
+				console.log("data url", dataURL);
+				window.open(signaturePad.toDataURL('image/svg+xml'));
+			}
+		});
     }
 
     //]]></script>
 
 </head>
 <body>
-<div class="wrapper">
+<div id="wrapper" class="wrapper">
     <img src="CRF.jpg" width="1100px" height="615px"/>
     <canvas id="signature-pad" class="signature-pad" width="1100px" height="615px"></canvas>
 </div>
@@ -85,6 +118,9 @@
 	<br>
     <button id="clear">Clear</button>
 	<button id="undo">Undo</button>
+	<button id="savePNGButton">savePNGButton</button>
+	<button id="saveSVGButton">saveSVGButton</button>
+	<button id="captureButton">captureButton</button>
 </div>
 
 
