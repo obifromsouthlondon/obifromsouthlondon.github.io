@@ -50,6 +50,7 @@
 			allowTaint: true,
 			useCors: true
 		}).then(canvas => {
+			console.log("data url", canvas.toDataURL());
 			window.open(canvas.toDataURL());
 		});
 	}
