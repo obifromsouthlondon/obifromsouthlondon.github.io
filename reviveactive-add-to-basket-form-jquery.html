@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<link href="https://supplementselector.reviveactive.com/custom/favicons/favicon.ico" type="image/x-icon" rel="shortcut icon">
+	<title>Add To Basket - JQuery</title>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script>
+		function productToBasket() {
+			alert("productToBasket()");
+			
+			var url = 'https://revive-active.myshopify.com/cart/add.js';
+			
+			alert(url);
+			
+			var items = {
+				"items": [
+					{
+						quantity: 1,
+						id: 31549083451478
+					},
+					{
+						quantity: 1,
+						id: 31549083517014
+					}
+				]
+			};
+			
+			$.ajax({
+				url: url,
+				type: "POST",
+				dataType: 'json',					  
+				data: JSON.stringify(items),	
+				success: function (data) 
+				{
+					alert("sucess!");
+				}
+			});
+		}
+	</script>
+	</head>
+  <body>
+    <p>
+      POST URL: <br> <b>https://revive-active.myshopify.com/cart/add.js</b>
+    </p>
+    <button onclick="productToBasket();">Add Multiple Items To Basket</button>
+  </body>
+</html>
