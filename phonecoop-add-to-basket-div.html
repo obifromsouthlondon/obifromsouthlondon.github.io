@@ -11,12 +11,13 @@
 
   <script type="text/javascript">
 
-    function productToBasket(e, value) {
-      $('#ProductToBasket input').val(value).trigger('input');
-      console.log("this: ", e, "value: ", value);
-      var prnt = $(e).parents('.rippl-product--details');
-      console.log("parent: ", prnt);
+    function productToBasket(value) {
+      //var prnt = $(e).parents('.rippl-product--details');
+      var prnt = $('.rippl-product--details');
       var formID = $(prnt).find('.basket-params').attr('prnt');
+      console.log("Get my value: ", value);
+      console.log("prnt: ", prnt);
+     
       console.log("formID: ", formID);
 
       $(prnt).find('.basket-params > div').each(function() {
@@ -34,6 +35,12 @@
       console.log("submitted");
     }
 
+    try {
+      productToBasket('Hello');
+    } catch (error) {
+      console.log('Error encountered.. ', error);      
+    }
+
 
   </script>
 </head>
@@ -42,7 +49,6 @@
   <p>
     POST URL Format: <br> <b>https://www.thephone.coop.tradeitdev.com/basket/</b>
   </p>
-  <div field="ProductToBasket" form-hidden="" id="ProductToBasket"><!---- --></div>
   <div class="rippl-product--details">
     <div class="basket-params" prnt="Mobile">
       <p>__csrfToken</p>
@@ -73,9 +79,9 @@
       <div class="basket_3_addtobasket" id="basket_3_addtobasket">1</div>
       <div class="custom_basket_attribute_3_IsCoopParent" id="custom_basket_attribute_3_IsCoopParent">0</div>
       <div class="basket_count" id="basket_count">3</div>
-
-      <button name="addToBasket" onclick="productToBasket(this,'hello');">Add To Basket</button>
     </div>
+
+    <button id="send" onclick="productToBasket('hello');">Add To Basket</button>
   </div>
 </body>
 
