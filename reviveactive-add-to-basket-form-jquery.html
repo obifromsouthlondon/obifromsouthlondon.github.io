@@ -7,11 +7,7 @@
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 	<script>
 		function productToBasket() {
-			alert("productToBasket()");
-			
 			var url = 'https://revive-active.myshopify.com/cart/add.js';
-			
-			alert(url);
 			
 			var items = {
 				"items": [
@@ -28,12 +24,17 @@
 			
 			$.ajax({
 				url: url,
-				type: "POST",
-				dataType: "jsonp",					  
-				data: JSON.stringify(items),	
+				type: "POST",		  
+				data: JSON.stringify(items),
 				success: function (data) 
 				{
 					alert("sucess!");
+				},
+				error: function(xhr, textStatus, error)
+				{
+					console.log(xhr.statusText);
+					console.log(textStatus);
+					console.log(error);
 				}
 			});
 		}
