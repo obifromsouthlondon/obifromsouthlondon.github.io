@@ -93,7 +93,7 @@
 
         function loadEmbedded() {
             $.ajax({
-                url: 'https://uat-phonecoop-b2c.conversity.com/service/remote/get-process-view?viewId=SYSV1&callback=processLoaded',
+                url: 'https://uat-phonecoop-b2c.conversity.com/service/remote/get-process-view?viewId=SYSV1&callback=processLoaded&csrf=XXXX',
 				beforeSend: function(jqXHR, settings) {
 					window.rippl_url = settings.url;
 				},

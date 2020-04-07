@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Character Sub</title>
+    <script type="text/javascript">
+      substitute = function (){
+        var value = document.getElementById("character").value;
+        alert(removeSpecialChar2(value));
+      }
+
+      function removeSpecialChar(value) {
+          var lower = value.toLowerCase();
+          var upper = value.toUpperCase();
+          var response = "";
+          for(var i=0; i<lower.length; ++i) {
+              if(lower[i] != upper[i] || lower[i].trim() === '' || (lower[i] !== '™' && lower[i] !== '®' && lower[i] !== '�'))
+                  response += value[i];
+          }
+          return response;
+      }
+
+      function removeSpecialChar2(stringToReplace){
+        var specialChars = "/[^\w\s]/gi";
+        for (var i = 0; i < specialChars.length; i++) {
+          stringToReplace = stringToReplace.replace(/[^\x20-\x7E]/g, '');
+        }
+        return stringToReplace;
+      }
+
+      function removeSpecialChar3(value) {
+          var lower = value.toLowerCase();
+          var upper = value.toUpperCase();
+          var response = "";
+          for(var i=0; i<lower.length; ++i) {
+              if(lower[i] != upper[i] || lower[i].trim() === '' || lower[i] > 127)
+                  response += value[i];
+          }
+          return response;
+      }
+    </script>
+  </head>
+  <body>
+    <form class="" action="index.html" method="post">
+      <input type="text" id="character" value="LEGO® DUPLO® All-in-One-Box-of-Fun"></input>
+      <button type="button" onclick="substitute()">substitute</button>
+    </form>
+  </body>
+</html>
