@@ -5,18 +5,18 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://prod-mccabesclarins-public.conversity.com/custom/favicons/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link href="https://stg-mccabesclarins-public.conversity.com/custom/favicons/favicon.ico" type="image/x-icon" rel="shortcut icon">
 	<link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
-	<link href="https://prod-mccabesclarins-public.conversity.com/applications/css/frontend-3rd-party.min.css" rel="stylesheet" type="text/css" />
-	<link href="https://s3-eu-west-1.amazonaws.com/ngc-dev/prod14/McCabes%20Clarins/CSS/client.css" rel="stylesheet" type="text/css" />
-	<link href="https://prod-mccabesclarins-public.conversity.com/service/remote/load-rippl-css" rel="stylesheet" type="text/css" />
+	<link href="https://stg-mccabesclarins-public.conversity.com/applications/css/frontend-3rd-party.min.css" rel="stylesheet" type="text/css" />
+	<link href="https://s3-eu-west-1.amazonaws.com/ngc-dev/stg/McCabes%20Clarins/CSS/client.css" rel="stylesheet" type="text/css" />
+	<link href="https://stg-mccabesclarins-public.conversity.com/service/remote/load-rippl-css" rel="stylesheet" type="text/css" />
 	
     <script>
         // This is callback method. Will be executed RIPPL external libraries loading.
         function librariesLoaded() {
         }
     </script>
-    <script src="https://prod-mccabesclarins-public.conversity.com/service/remote/load-remote-libraries?callback=librariesLoaded"></script>
+    <script src="https://stg-mccabesclarins-public.conversity.com/service/remote/load-remote-libraries?callback=librariesLoaded"></script>
 </head>
 
 <style>
@@ -45,7 +45,7 @@
 
 		function loadEmbedded() {
 			$.ajax({
-				url: 'https://prod-mccabesclarins-public.conversity.com/service/remote/get-process-view?viewId=Process&callback=processLoaded',
+				url: 'https://stg-mccabesclarins-public.conversity.com/service/remote/get-process-view?viewId=Process&callback=processLoaded',
 				beforeSend: function(jqXHR, settings) {
 					window.rippl_url = settings.url;
 				},
