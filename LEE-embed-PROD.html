@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>LEE - PROD - component (embed)</title>	
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://prod-lee-public.conversity.com/custom/favicons/favicon.ico" type="image/x-icon" rel="shortcut icon">
+	<link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+	<link href="https://prod-lee-public.conversity.com/applications/css/frontend-3rd-party.min.css" rel="stylesheet" type="text/css" />
+	<link href="https://s3-eu-west-1.amazonaws.com/ngc-dev/prod14/LEE/CSS/client.css" rel="stylesheet" type="text/css" />
+	<link href="https://prod-lee-public.conversity.com/service/remote/load-rippl-css" rel="stylesheet" type="text/css" />
+	
+    <script>
+        // This is callback method. Will be executed RIPPL external libraries loading.
+        function librariesLoaded() {
+        }
+    </script>
+    <script src="https://prod-lee-public.conversity.com/service/remote/load-remote-libraries?callback=librariesLoaded"></script>
+</head>
+
+<style>
+    #ngc-container .scrollScreen {
+        height: auto;
+        padding: 0;
+        width: 100%;
+        position: static;
+        overflow-y: visible;
+    }
+    div{box-sizing:border-box;}
+</style>
+
+<body style="margin:0; padding:0; width:100%; overflow:auto; height:100%; position:static;">
+	<div id="ngc-container" style="height:100% !important; overflow: auto;"></div>
+
+	<script>		
+		function processLoaded() {
+			window.dataLayer = window.dataLayer || [];
+			window.dataLayer.push({'event': 'journeyStarted', 'flowtype': 'IGS'});
+		}
+
+		$(window).load(function() {
+			loadEmbedded();
+		});
+
+		function loadEmbedded() {
+			$.ajax({
+				url: 'https://prod-lee-public.conversity.com/service/remote/get-process-view?viewId=Process&callback=processLoaded',
+				beforeSend: function(jqXHR, settings) {
+					window.rippl_url = settings.url;
+				},
+				success: function (html) {
+					$("#ngc-container").html(html);
+				}
+			});
+		}
+	</script>
+</body>
+</html>
