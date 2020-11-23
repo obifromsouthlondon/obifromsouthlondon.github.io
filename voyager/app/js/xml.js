@@ -1,6 +1,6 @@
 function xmlReceiving() {
     $.ajax({
-        url: '/data.xml',
+        url: '../data.xml',
         type: "GET",
         dataType: "xml",
         success: function (xml) {
