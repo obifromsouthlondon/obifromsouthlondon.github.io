@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodes>
+<!-- 
+    node = formView, 
+    node.id = formView.id = form.id,
+    node.title = formView.name = form.name 
+    node.type = formView.type / view template name
+-->
+    <node 
+        id="Question1" 
+        tags="root,end,question,option,link" 
+        title="Title" 
+        img="images/icon/single_slider.png" 
+        pid="question1000234715343" 
+        stpid="null"
+
+        type="Intro,Section,Select,MultiSelect,Slider,RangeSlider,MultiSlider,Recs"
+
+        staticTitle="Static Page Title"
+        staticDescr="Static Page Description"
+        bgSource="img/video link"
+        bgSourceType="img or video"
+
+        buttonLbl="Static text"
+
+        boost="empty by default"
+        showRule="empty by default"
+        settings="empty by default"
+    >
+
+        <!-- Structure -->
+        <formEl 
+            type="Input"
+            name="Response1"
+            title="Displayed on Responses Panel"
+            subtitle="Empty by default - select,slider only"
+
+            maxLimit="select only"
+            showButton="select only"
+            isPriority="select only"
+
+            template="slider only"
+            orientation="slider only: horisontal/vertical"
+        >
+            <option
+                id="Option ID" 
+                tags="option" 
+                pid="go to Question ID" 
+                stpid="null"
+                title=""
+                slink="go to Question ID"
+            >
+                <selectValue>Insert title by default</selectValue>
+                <selectRespLabel>Insert title by default</selectRespLabel>
+                <selectLabel>empty by default</selectLabel>
+                <selectDescription>empty by default</selectDescription>
+                <selectImage>empty by default</selectImage>
+
+                <sliderType>slider, range required</sliderType>
+                <sliderName>empty by default</sliderName>
+                <sliderLowVal>* required</sliderLowVal>
+                <sliderHighVal>* required</sliderHighVal>
+                <sliderStep>* required</sliderStep>
+                <sliderInitVal>* required</sliderInitVal>
+                <sliderInitVal2>empty by default</sliderInitVal2>
+                <sliderIsTransparent>empty by default</sliderIsTransparent>
+                <sliderShowMinMax>empty by default</sliderShowMinMax>
+                <sliderShowMinMaxTextOnly>empty by default</sliderShowMinMaxTextOnly>
+                <sliderMinText>empty by default</sliderMinText>
+                <sliderMaxText>empty by default</sliderMaxText>
+                <sliderGridLegendType>none</sliderGridLegendType>
+                <sliderAddPrefixText>empty by default</sliderAddPrefixText>
+                <sliderPrefixText>empty by default</sliderPrefixText>
+                <sliderValPosition>none</sliderValPosition>
+
+                <inputType>text,email,password,date,number,phone</inputType>
+                <inputInitVal>empty by default</inputInitVal>
+                <inputPlaceholder>empty by default</inputPlaceholder>
+                <inputIsRequired>empty by default</inputIsRequired>
+                <inputValidationPattern>empty by default</inputValidationPattern>
+                <inputCustomErrorMsg>empty by default</inputCustomErrorMsg>
+                <inputIsCustomErrorMsgUI>empty by default</inputIsCustomErrorMsgUI>
+                <inputOnClickJS>empty by default</inputOnClickJS>
+            </option>
+        </formEL>
+
+    </node>
+</nodes>

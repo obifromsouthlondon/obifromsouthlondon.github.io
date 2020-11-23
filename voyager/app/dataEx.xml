@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodes>
+<!-- 
+    node = formView, 
+    node.id = formView.id = form.id,
+    node.title = formView.name = form.name 
+    node.type = formView.type / view template name
+-->
+    <node 
+        id="question410324065089" 
+        tags="questions" 
+        title="Single Slider" 
+        img="images/icon/single_slider.png" 
+        pid="question1000234715343" 
+        stpid="null"
+        type="Select"
+
+        description=""
+        bgSource=""
+
+        buttonLbl=""
+
+        boost=""
+        show=""
+        settings=""
+    >
+
+        <!-- Select -->
+        <formEl 
+            type="Select"
+            name="Response1"
+            title=""
+            subtitle=""
+
+            maxLimit=""
+            showButton=""
+            isPriority=""
+
+            template="n/a"
+            orientation="n/a"
+        >
+            <option
+                id="Question1" 
+                tags="option" 
+                pid="Question2" 
+                stpid="null"
+                title=""
+                slink=""
+            >
+                <selectValue></selectValue>
+                <selectRespLabel></selectRespLabel>
+                <selectLabel></selectLabel>
+                <selectDescription></selectDescription>
+                <selectImage></selectImage>
+            </option>
+        </formEL>
+        <!-- /Select -->
+
+
+
+        <!-- Slider -->
+        <formEl 
+            type="Slider"
+            name="Response1"
+            title=""
+            subtitle=""
+
+            maxLimit="n/a"
+            showButton="n/a"
+            isPriority="n/a"
+
+            template=""
+            orientation=""
+        >
+            <option
+                id="question1000234715343" 
+                tags="option" 
+                pid="question831987843283" 
+                stpid="null"
+                title=""
+                slink=""
+            >
+                <sliderType>slider, range</sliderType>
+                <sliderName></sliderName>
+                <sliderLowVal></sliderLowVal>
+                <sliderHighVal></sliderHighVal>
+                <sliderStep></sliderStep>
+                <sliderInitVal></sliderInitVal>
+                <sliderInitVal2></sliderInitVal2>
+                <sliderIsTransparent></sliderIsTransparent>
+                <sliderShowMinMax></sliderShowMinMax>
+                <sliderShowMinMaxTextOnly></sliderShowMinMaxTextOnly>
+                <sliderMinText></sliderMinText>
+                <sliderMaxText></sliderMaxText>
+                <sliderGridLegendType></sliderGridLegendType>
+                <sliderAddPrefixText></sliderAddPrefixText>
+                <sliderPrefixText></sliderPrefixText>
+                <sliderValPosition></sliderValPosition>
+            </option>
+        </formEL>
+
+
+        <!-- Input -->
+        <formEl 
+            type="Input"
+            name="Response1"
+            title=""
+            subtitle="n/a"
+
+            maxLimit="n/a"
+            showButton="n/a"
+            isPriority="n/a"
+
+            template="n/a"
+            orientation="n/a"
+        >
+            <option
+                id="question1000234715343" 
+                tags="option" 
+                pid="question831987843283" 
+                stpid="null"
+                title=""
+                slink=""
+            >
+                <inputType>text,email,password,date,number,phone</inputType>
+                <inputInitVal></inputInitVal>
+                <inputPlaceholder></inputPlaceholder>
+                <inputIsRequired></inputIsRequired>
+                <inputValidationPattern></inputValidationPattern>
+                <inputCustomErrorMsg></inputCustomErrorMsg>
+                <inputIsCustomErrorMsgUI></inputIsCustomErrorMsgUI>
+                <inputOnClickJS></inputOnClickJS>
+            </option>
+        </formEL>
+
+
+
+        <!-- Structure -->
+        <formEl 
+            type="Input"
+            name="Response1"
+            title=""
+            subtitle="n/a"
+
+            maxLimit="n/a"
+            showButton="n/a"
+            isPriority="n/a"
+
+            template="n/a"
+            orientation="n/a"
+        >
+            <option
+                id="question1000234715343" 
+                tags="option" 
+                pid="question831987843283" 
+                stpid="null"
+                title=""
+                slink=""
+            >
+                <selectValue></selectValue>
+                <selectRespLabel></selectRespLabel>
+                <selectLabel></selectLabel>
+                <selectDescription></selectDescription>
+                <selectImage></selectImage>
+
+                <sliderType>slider, range</sliderType>
+                <sliderName></sliderName>
+                <sliderLowVal></sliderLowVal>
+                <sliderHighVal></sliderHighVal>
+                <sliderStep></sliderStep>
+                <sliderInitVal></sliderInitVal>
+                <sliderInitVal2></sliderInitVal2>
+                <sliderIsTransparent></sliderIsTransparent>
+                <sliderShowMinMax></sliderShowMinMax>
+                <sliderShowMinMaxTextOnly></sliderShowMinMaxTextOnly>
+                <sliderMinText></sliderMinText>
+                <sliderMaxText></sliderMaxText>
+                <sliderGridLegendType></sliderGridLegendType>
+                <sliderAddPrefixText></sliderAddPrefixText>
+                <sliderPrefixText></sliderPrefixText>
+                <sliderValPosition></sliderValPosition>
+
+                <inputType>text,email,password,date,number,phone</inputType>
+                <inputInitVal></inputInitVal>
+                <inputPlaceholder></inputPlaceholder>
+                <inputIsRequired></inputIsRequired>
+                <inputValidationPattern></inputValidationPattern>
+                <inputCustomErrorMsg></inputCustomErrorMsg>
+                <inputIsCustomErrorMsgUI></inputIsCustomErrorMsgUI>
+                <inputOnClickJS></inputOnClickJS>
+            </option>
+        </formEL>
+
+    </node>
+</nodes>

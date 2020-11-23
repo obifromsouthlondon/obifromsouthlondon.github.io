@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Voyager</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#00ce6d">
+	<link rel="shortcut icon" href="favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/app.js"></script>
+    
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/reset.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/main.css'>
+</head>
+
+<body>
+
+    <header><!-- Included Content --></header>
+
+    <section>
+        <div id="viewHome" class="vgr-home">
+
+            <!-- Home Head / Start -->
+            <div class="vgr-home--header">
+                <div class="vgr-home--header_caption">
+                    <select>
+                        <option val="myJourneys" selected>My journeys</option>
+                    </select>
+                </div>
+                <div class="vgr-btn" onclick="vgrCreateForm.show();">
+                    <span>Create new journey</span>
+                    <svg class="icon-svg"><use xlink:href="#plusSmall" /></svg>
+                </div>
+            </div>
+            <!-- Home Head / End -->
+
+            <!-- Filters / Start -->
+            <div class="vgr-home--filters">
+                <div class="vgr-home--filters_left">
+                    <div class="vgr-filter--search">
+                        <div class="vgr-filter--search_field"><input type="text" value="" placeholder="Type to find..."></div>
+                        <svg class="icon-svg"><use xlink:href="#search" /></svg>
+                    </div>
+                    <div class="vgr-filter--link">
+                        <select>
+                            <option val="myJourneys" selected>All clients</option>
+                            <option val="Garmin">Garmin</option>
+                            <option val="LEGO">LEGO</option>
+                        </select>
+                    </div>
+                    <div class="vgr-filter--link">
+                        <span class="vgr-filter--link_lbl">Templates</span>
+                    </div>
+                    <div class="vgr-filter--link">
+                        <span class="vgr-filter--link_lbl" id="vgrFavLink">Favourites</span>
+                    </div>
+                </div>
+                <div class="vgr-home--filters_right">
+                    <div class="vgr-filter--link">
+                        <select>
+                            <option val="Recent" selected>Recent</option>
+                        </select>
+                    </div>
+                    <div class="vgr-filter--link">
+                        <select>
+                            <option val="All" selected>All Colaborators</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- Filters / End -->
+
+            <!-- Grid / Start -->
+            <div class="vgr-home--grid">
+
+                <!-- Card / Start -->
+                <div class="vgr-home--card">
+                    <div class="vgr-home--card_customer">GARMIN</div>
+                    <div class="vgr-home--card_name">Running Watch</div>
+                    <div class="vgr-home--card_date">Aug 17, 2020</div>
+                    <svg class="icon-svg vgr-home--card_addFav"><use xlink:href="#star" /></svg>
+                    <div class="vgr-subnav">
+                        <div class="vgr-subnav--icon">...</div>
+                    </div>
+                </div>
+                <!-- Card / End -->
+
+                <!-- Card / Start -->
+                <div class="vgr-home--card">
+                    <div class="vgr-home--card_customer">GARMIN</div>
+                    <div class="vgr-home--card_name">Running Watch</div>
+                    <div class="vgr-home--card_date">Aug 17, 2020</div>
+                    <svg class="icon-svg vgr-home--card_addFav vgr-active"><use xlink:href="#star" /></svg>
+                    <div class="vgr-subnav">
+                        <div class="vgr-subnav--icon">...</div>
+                    </div>
+                </div>
+                <!-- Card / End -->
+
+                <!-- Card / Start -->
+                <div class="vgr-home--card">
+                    <div class="vgr-home--card_customer">GARMIN</div>
+                    <div class="vgr-home--card_name">Running Watch</div>
+                    <div class="vgr-home--card_date">Aug 17, 2020</div>
+                    <svg class="icon-svg vgr-home--card_addFav vgr-active"><use xlink:href="#star" /></svg>
+                    <div class="vgr-subnav">
+                        <div class="vgr-subnav--icon">...</div>
+                    </div>
+                </div>
+                <!-- Card / End -->
+
+                <!-- Card / Start -->
+                <div class="vgr-home--card">
+                    <div class="vgr-home--card_customer">GARMIN</div>
+                    <div class="vgr-home--card_name">Running Watch</div>
+                    <div class="vgr-home--card_date">Aug 17, 2020</div>
+                    <svg class="icon-svg vgr-home--card_addFav"><use xlink:href="#star" /></svg>
+                    <div class="vgr-subnav">
+                        <div class="vgr-subnav--icon">...</div>
+                    </div>
+                </div>
+                <!-- Card / End -->
+
+                <!-- Card / Start -->
+                <div class="vgr-home--card">
+                    <div class="vgr-home--card_customer">GARMIN</div>
+                    <div class="vgr-home--card_name">Running Watch</div>
+                    <div class="vgr-home--card_date">Aug 17, 2020</div>
+                    <svg class="icon-svg vgr-home--card_addFav vgr-active"><use xlink:href="#star" /></svg>
+                    <div class="vgr-subnav">
+                        <div class="vgr-subnav--icon">...</div>
+                    </div>
+                </div>
+                <!-- Card / End -->
+
+                <!-- Card / Start -->
+                <div class="vgr-home--card">
+                    <div class="vgr-home--card_customer">GARMIN</div>
+                    <div class="vgr-home--card_name">Running Watch</div>
+                    <div class="vgr-home--card_date">Aug 17, 2020</div>
+                    <svg class="icon-svg vgr-home--card_addFav vgr-active"><use xlink:href="#star" /></svg>
+                    <div class="vgr-subnav">
+                        <div class="vgr-subnav--icon">...</div>
+                    </div>
+                </div>
+                <!-- Card / End -->
+
+                <!-- Card / Start -->
+                <div class="vgr-home--card">
+                    <div class="vgr-home--card_customer">GARMIN</div>
+                    <div class="vgr-home--card_name">Running Watch</div>
+                    <div class="vgr-home--card_date">Aug 17, 2020</div>
+                    <svg class="icon-svg vgr-home--card_addFav"><use xlink:href="#star" /></svg>
+                    <div class="vgr-subnav">
+                        <div class="vgr-subnav--icon">...</div>
+                    </div>
+                </div>
+                <!-- Card / End -->
+
+                <!-- Card / Start -->
+                <div class="vgr-home--card">
+                    <div class="vgr-home--card_customer">GARMIN</div>
+                    <div class="vgr-home--card_name">Running Watch</div>
+                    <div class="vgr-home--card_date">Aug 17, 2020</div>
+                    <svg class="icon-svg vgr-home--card_addFav vgr-active"><use xlink:href="#star" /></svg>
+                    <div class="vgr-subnav">
+                        <div class="vgr-subnav--icon">...</div>
+                    </div>
+                </div>
+                <!-- Card / End -->
+
+                <!-- Card / Start -->
+                <div class="vgr-home--card">
+                    <div class="vgr-home--card_customer">GARMIN</div>
+                    <div class="vgr-home--card_name">Running Watch</div>
+                    <div class="vgr-home--card_date">Aug 17, 2020</div>
+                    <svg class="icon-svg vgr-home--card_addFav vgr-active"><use xlink:href="#star" /></svg>
+                    <div class="vgr-subnav">
+                        <div class="vgr-subnav--icon">...</div>
+                    </div>
+                </div>
+                <!-- Card / End -->
+    
+            </div>
+            <!-- Grid / End -->
+
+        </div>
+    </section>
+
+
+    <div class="vgr-modal--fullScreen" id="vgrCreateClient">
+        <div class="vgr-modal--close" onclick="vgrCreateForm.hide()">
+            &times;
+        </div>
+        <div class="vgr-modal--title">Create a new journey</div>
+        <form class="vgr-fieldForm">
+            <label for="JName">Journey Name</label>
+            <div class="vgr-form--inpBox">
+                <input type="text" value="" id="JName" placeholder="Enter journey name...">
+            </div>
+            <label for="SClient">Client</label>
+            <div class="vgr-form--inpBox">
+                <select id="SClient">
+                    <option val="myJourneys" selected>Create new</option>
+                    <option val="Garmin">Garmin</option>
+                    <option val="LEGO">LEGO</option>
+                </select>
+            </div>
+            <label for="IClient">Create new client</label>
+            <div class="vgr-form--inpBox">
+                <input type="text" value="" id="IClient" placeholder="Enter client name..." pattern="(.|\s)*\S(.|\s)*" required>
+            </div>
+            <div class="vgr-form--btn">
+                <div class="vgr-btn" onclick="vgrCreateForm.hide()">Create</div>
+            </div>
+        </form>
+    </div>
+
+
+    <script>
+        var vgrCreateForm = {
+            show: function() {
+                $('#vgrCreateClient').fadeIn(200);
+            },
+            hide: function() {
+                $('#vgrCreateClient').fadeOut(200);
+            }
+        }
+
+        $(function() {
+            vgrCheckFavouritesQty();
+
+            $('.vgr-home--card_addFav').click(function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                $(this).toggleClass('vgr-active');
+                vgrCheckFavouritesQty();
+            });
+
+            $('.vgr-home--card').click(function() {
+                window.location = "/designView.html";
+            });
+
+            $('.vgr-home--card .vgr-subnav').click(function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                modalAddForm.createSubNav(this, 'bottom', 'right', 'card');
+            });
+
+            function vgrCheckFavouritesQty() {
+                var qty = $('.vgr-home--card .vgr-home--card_addFav.vgr-active').length;
+                $('#vgrFavLink').append('<div class="vgr-filter--link_qty">' + qty + '</div>');
+            }
+         });
+    </script>
+
+</body>
+</html>

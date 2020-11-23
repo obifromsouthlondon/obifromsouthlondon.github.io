@@ -1,0 +1,66 @@
+    <link rel='stylesheet' type='text/css' media='screen' href='/designView/css/style.css'>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <div class="buttons">
+        <button id="epdf">Export PDF</button>
+        <button id="epng">Export PNG</button>
+        <button id="expjson">Export Json</button>
+        <button id="exml">Export XML</button>
+        <button id="ixml" class="btn-green">Import XML</button>
+    </div>
+    <div style="display: flex;" id="main-grid">
+        <div class="createbox">
+            <div class="box-list bg-white" id="design_library">
+                <span>
+                    <img src="/designView/images/icon/back-btn.png" /> Design library
+                </span>
+            </div>
+            <div class="box-list" id="main_into">
+                <span>
+                    <img src="/designView/images/icon/section_intro.png" /> Main Intro
+                </span>
+            </div>
+            <div class="box-list" id="section_into">
+                <span>
+                    <img src="/designView/images/icon/section_intro.png" /> Section Intro
+                </span>
+            </div>
+            <div class="box-list" id="input_box">
+                <span> <img src="/designView/images/icon/input_box.png" /> Input Box</span>
+            </div>
+            <div class="box-list" id="single_select">
+                <span> <img src="/designView/images/icon/single_select.png" /> Single Select</span>
+            </div>
+            <div class="box-list" id="multi_select">
+                <span><img src="/designView/images/icon/multi_select.png" /> Multi Select</span>
+            </div>
+            <div class="box-list" id="single_slider">
+                <span> <img src="/designView/images/icon/single_slider.png" /> Single Slider</span>
+            </div>
+            <div class="box-list" id="multi_slider">
+                <span> <img src="/designView/images/icon/multi_slider.png" /> Multi Slider</span>
+            </div>
+            <div class="box-list" id="range_slider">
+                <span> <img src="/designView/images/icon/range_slider.png" /> Range Slider</span>
+            </div>
+            <div class="box-list" id="answer_block">
+                <span><img src="/designView/images/icon/answer_book.png" /> Answer Block</span>
+            </div>
+            <div class="box-list" id="recommendations_block">
+                <span> <img src="/designView/images/icon/recommendations.png" /> Recommendations</span>
+            </div>
+        </div>
+        <div id="editForm" title="Edit Node" style="display:none; text-align:center;">
+            <div>
+                <div style="padding: 5px 0 15px 0;">
+                    <label style="color:#aeaeae; width:50px; display:inline-block;color: #0f1734;" for="title">Title</label>
+                    <input id="title" id="title" value="" />
+                </div>
+                <div style="padding: 8px 0 5px 0;">
+                    <button style="width:108px;" id="delete_node" class="bg_red">Delete</button>
+                    <button style="width:108px;" id="save">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->

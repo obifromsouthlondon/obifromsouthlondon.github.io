@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voyager</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#00ce6d">
+    <link rel="shortcut icon" href="favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/xml.js"></script>
+    
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/reset.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/main.css'>
+</head>
+
+<body>
+
+    <header><!-- Included Content --></header>
+
+    <section>
+        <div id="viewBuild" class="vgr-zArea" stateQuestion="0" stateIntro="0" stateSection="0" stateData="0" stateRecs="0" stateFromPoint="0">
+
+            <div class="buildView-screen">
+                <!-- Paths / Start -->
+
+                <!-- Add New Path Box / Start -->
+                <div class="vgr-addPath">
+                    <div class="vgr-btn vgr-btn_sm vgr-btn_3" data-type="addLine" onclick="modalAddForm.createPath('Path','add')">
+                        <span>Add a new path</span>
+                        <svg class="icon-svg"><use xlink:href="#arrow" /></svg>
+                    </div>
+                </div>
+                <!-- Add New Path Box / End -->
+
+                <!-- Paths / End -->
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- TEMPLATES AREA  -->
+
+    <!-- Path Box Tpl / Start -->
+    <div class="tpl-line" type="tpl">
+
+        <div class="vgr-line">
+            <div class="vgr-line--title"></div>
+            <div class="vgr-line--body">
+                <!-- Form Views will be placed in this area -->
+            </div>
+        </div>
+
+    </div>
+    <!-- Path Box Tpl / End -->
+
+
+    <!-- Node Tpl / Start -->
+    <div class="tpl-lineItem" type="tpl">
+
+        <div class="vgr-lineItem vgr-dropBox" data-content="empty" ondragover="dragOver(event);" ondrop="drop(event);">
+            <div class="vgr-addNewForm" onclick="modalAddForm.createLineItemNav(this, 'bottom', 'right')">
+                <div class="vgr-addForm_action">+</div>
+                <!-- Add Form Navigation will be inserted here... -->
+            </div>
+            <!-- Dropped content will be inserted here... -->
+            <div class="vgr-data" data-xml="node"></div>
+        </div>
+
+    </div>
+    <!-- Node Tpl / End -->
+
+
+    <!-- Form View Tpl / Start -->
+    <div class="tpl-formView" type="tpl">
+
+        <div class="vgr-formView vgr-drugItem" draggable="true" ondragstart="dragStart(event);">
+            <div class="vgr-formView--header">
+                <div class="vgr-formView--header_formName vgr-formView--prop_name">Form Name</div>
+                <div class="vgr-formView--header_boost vgr-formView--prop_boost">
+                    <span>Boost</span>
+                    <input type="number" min="0" max="9" size="1" value="0">
+                </div>
+                <div class="vgr-form--link" data-content="default">
+                    <div class="vgr-form--linkBox">
+                        <div class="vgr-subnav" onclick="modalAddForm.createSubNav(this, 'bottom', 'right', 'link')">
+                            <div class="vgr-subnav--icon">
+                                <svg class="icon-svg vgr-subnav--icon_link"><use xlink:href="#link" /></svg>
+                                <span class="vgr-subnav--icon_plus">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vgr-formView--headActions vgr-disable">
+                    <svg class="icon-svg vgr-formView--headActions_view"><use xlink:href="#eye" /></svg>
+                    <svg class="icon-svg vgr-formView--headActions_settings"><use xlink:href="#gear" /></svg>
+                </div>
+            </div>
+            <div class="vgr-formView--body">
+
+                <!-- Form View : Static Content / Start -->
+                <div class="vgr-formView--staticBox">
+                    <div class="vgr-form--line">
+                        <div class="vgr-form--line_image vgr-formView--prop_img">
+                            <svg class="icon-svg"><use xlink:href="#image" /></svg>
+                        </div>
+                        <div class="vgr-formView--prop_title">
+                            Form View Static Title
+                        </div>
+                        <div class="vgr-subnav" onclick="modalAddForm.createSubNav(this, 'bottom', 'right', 'formView')">
+                            <div class="vgr-subnav--icon">...</div>
+                        </div>
+                    </div>
+                    <div class="vgr-formView--prop_subtitle">
+                        Form View Static Subtitle
+                    </div>
+                </div>
+                <!-- Form View : Static Content / End -->
+                
+                <div class="vgr-formView--questionBox">
+                    <!-- Form content will be inserted here... -->
+                </div>
+            </div>  
+        </div>
+
+    </div>
+    <!-- Form View Tpl / End -->
+
+
+    <!-- Modal 'Create Form' Template / Start -->
+    <div class="tpl-FormViewNav">
+
+        <div class="vgr-create-FormViewNav" tr-position="left" path-type="Data">
+            <div class="vgr-create-FormViewNav_action" data-type="Data" type="Boost" onclick="modalAddForm.bindCreateFormView(this)">
+                <span>Boost</span>
+            </div>
+        </div>
+
+        <div class="vgr-create-FormViewNav" tr-position="left" path-type="Path">
+            <div class="vgr-create-FormViewNav_action" data-type="Intro" type="Main Intro" onclick="modalAddForm.bindCreateFormView(this)">
+                <svg class="icon-svg"><use xlink:href="#Intro" /></svg>
+                <span>Main Intro</span>
+            </div>
+            <div class="vgr-create-FormViewNav_action" data-type="Section" type="Section Intro" onclick="modalAddForm.bindCreateFormView(this)">
+                <svg class="icon-svg"><use xlink:href="#Section" /></svg>
+                <span>Section Intro</span>
+            </div>
+            <div class="vgr-create-FormViewNav_action" data-type="Input" type="Input Box" onclick="modalAddForm.bindCreateFormView(this)">
+                <svg class="icon-svg clr-blue"><use xlink:href="#Input" /></svg>
+                <span>Input Box</span>
+            </div>
+            <div class="vgr-create-FormViewNav_action" data-type="Select" type="Single Select" onclick="modalAddForm.bindCreateFormView(this)">
+                <svg class="icon-svg clr-blue"><use xlink:href="#Select" /></svg>
+                <span>Single Select</span>
+            </div>
+            <div class="vgr-create-FormViewNav_action" data-type="MultiSelect" type="Multi Select" onclick="modalAddForm.bindCreateFormView(this)">
+                <svg class="icon-svg clr-blue"><use xlink:href="#MultiSelect" /></svg>
+                <span>Multi Select</span>
+            </div>
+            <div class="vgr-create-FormViewNav_action" data-type="Slider" type="Single Slider" onclick="modalAddForm.bindCreateFormView(this)">
+                <svg class="icon-svg clr-blue"><use xlink:href="#Slider" /></svg>
+                <span>Single Slider</span>
+            </div>
+            <div class="vgr-create-FormViewNav_action" data-type="MultiSlider" type="Multi Slider" onclick="modalAddForm.bindCreateFormView(this)">
+                <svg class="icon-svg clr-blue"><use xlink:href="#MultiSlider" /></svg>
+                <span>Multi Slider</span>
+            </div>
+            <div class="vgr-create-FormViewNav_action" data-type="RangeSlider" type="Range Slider" onclick="modalAddForm.bindCreateFormView(this)">
+                <svg class="icon-svg clr-blue"><use xlink:href="#RangeSlider" /></svg>
+                <span>Range Slider</span>
+            </div>
+            <div class="vgr-create-FormViewNav_action" data-type="Recs" type="Recommendations" onclick="modalAddForm.bindCreateFormView(this)">
+                <svg class="icon-svg clr-blue"><use xlink:href="#Recs" /></svg>
+                <span>Recs</span>
+            </div>
+        </div>
+
+        <div class="vgr-create-FormViewNav" tr-position="left" path-type="Features">
+            <div class="vgr-create-FormViewNav_action" data-type="Data" type="Languages" onclick="modalAddForm.bindCreateFormView(this)">
+                <span>Languages</span>
+            </div>
+            <div class="vgr-create-FormViewNav_action" data-type="Data" type="Currency" onclick="modalAddForm.bindCreateFormView(this)">
+                <span>Currency</span>
+            </div>
+            <div class="vgr-create-FormViewNav_action" data-type="Data" type="Summary" onclick="modalAddForm.bindCreateFormView(this)">
+                <span>Summary</span>
+            </div>
+            <div class="vgr-create-FormViewNav_action" data-type="Data" type="Email Recommendation" onclick="modalAddForm.bindCreateFormView(this)">
+                <span>Email Recs</span>
+            </div>
+            <div class="vgr-create-FormViewNav_action" data-type="Data" type="Net Promoter Score" onclick="modalAddForm.bindCreateFormView(this)">
+                <span>Net Promoter Score</span>
+            </div>
+            <div class="vgr-create-FormViewNav_action" data-type="Data" type="User Interface" onclick="modalAddForm.bindCreateFormView(this)">
+                <span>User Interface</span>
+            </div>
+            <div class="vgr-create-FormViewNav_action" data-type="Data" type="Animations" onclick="modalAddForm.bindCreateFormView(this)">
+                <span>Animations</span>
+            </div>
+        </div>
+        
+    </div>
+    <!-- Modal 'Create Form' Template / End -->
+
+
+    <!-- Form Template / Start -->
+    <div class="tpl-form" type="tpl">
+
+        <div class="vgr-form">
+            <div class="vgr-form--quest">
+                <!-- Question / Start -->
+                <div class="vgr-form--line">
+                    <div class="vgr-formView--prop_title">
+                        Form Title
+                    </div>
+                    <div class="vgr-subnav" onclick="modalAddForm.createSubNav(this, 'bottom', 'right', 'form')">
+                        <div class="vgr-subnav--icon">...</div>
+                    </div>
+                </div>
+                <div class="vgr-formView--prop_subtitle">
+                    Form Subtitle
+                </div>
+                <!-- Question / End -->
+            </div>
+            <div class="vgr-form--answr">
+                <!-- Answers will be generated in this area... -->
+
+                <div class="vgr-form--addAnswer" onclick="modalAddForm.addAnswer( $(this).parents('.vgr-form--answr'), 1 )">+</div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Form Template / End -->
+
+
+    <!-- Form Answer Template / Start -->
+    <div class="tpl-form--line_answer" type="tpl">
+        <div class="vgr-form--line" data-index="0">
+            <div class="vgr-form--line_image" data-content="none">
+                <svg class="icon-svg"><use xlink:href="#image" /></svg>
+            </div>
+            <div class="vgr-formView--prop_title">
+                <div class="vgr-form--line_dataField" field-type="Title" style="display:block;"></div>
+                <div class="vgr-form--line_dataField" field-type="Value"></div>
+                <div class="vgr-form--line_dataField" field-type="Response Label"></div>
+                <div class="vgr-form--line_dataField" field-type="Label"></div>
+                <div class="vgr-form--line_dataField" field-type="Description"></div>
+                <div class="vgr-form--line_dataField" field-type="Image source"></div>
+            </div>
+            <div class="vgr-subnav" onclick="modalAddForm.createSubNav(this, 'bottom', 'right', 'answer')">
+                <div class="vgr-subnav--icon">...</div>
+            </div>
+            <div class="vgr-form--link" data-type="plus" data-content="empty">
+                <div class="vgr-form--linkBox">
+                    <div class="vgr-subnav" onclick="modalAddForm.createSubNav(this, 'bottom', 'right', 'link')">
+                        <div class="vgr-subnav--icon">+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Form Answer Template / End -->
+
+
+    <script>
+        $(document).ready(function(){
+            $('body').append('<div class="vgr-zooming">');
+            $('.vgr-zooming').load("/templates/tpl_zooming.html", function( response, status, xhr ) {
+                if ( status == "error" ) {
+                    console.log( 'Source loading issue: ' + xhr.status + " " + xhr.statusText );
+                }
+                if ( status == "success" ) {
+                    zooming(10,100,5);
+                }
+            }); // load zooming tpl
+        });
+    </script>
+
+</body>
+</html>

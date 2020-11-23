@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodes>
+    <node title="Start" name="Start" tags="root" id="nodeStart"/>
+    <node id="nodeEnd" pid="question357011973912" title="End" tags="end" stpid="null"/>
+    <node id="question554389375033" pid="question231036895487" title="Single Select" tags="question" type="Select" stpid="null" img="images/icon/single_select.png"/>
+    <node id="question585703942986" pid="question554389375033" title="Answer" tags="option" stpid="null"/>
+    <node id="question1352959337821" pid="question554389375033" title="Answer" tags="option" stpid="null"/>
+    <node id="question350416077176" pid="question585703942986" title="Multi Select" tags="question" type="MultiSelect" stpid="null" img="images/icon/multi_select.png"/>
+    <node id="question1541215295600" pid="question1352959337821" toid="question752689704815"  title="Single Select" tags="questions" type="Select" stpid="null" img="images/icon/single_select.png"/>
+    <node id="question752689704815" pid="question350416077176" title="Single Select" tags="question" type="Select" stpid="null" img="images/icon/single_select.png"/>
+    <node id="question231036895487" pid="nodeStart" title="Main Intro" tags="intro" type="Intro" stpid="null" img="images/icon/section_intro.png"/>
+    <node id="question357011973912" pid="question752689704815" title="Recommendations" tags="recommendations" type="Recs" stpid="null" img="images/icon/recommendations.png"/>
+</nodes>

@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodes>
+    <node title="Start" name="Start" tags="root" id="nodeStart"/>
+    <node id="nodeEnd" pid="question357011973912" title="End" tags="end" stpid="null"/>
+
+    <node id="question554389375033" pid="question231036895487" toid="" tags="question" title="Color" img="/designView/images/icon/single_slider.png" type="Select" staticTitle="Static Page Title"  staticDescr="Static Page Description" bgSource="" bgSourceType="img" buttonLbl="Next" boost="" showRule="" settings="">
+        <form_element type="Select" name="Responses1" title="Your prefered color?" subtitle="Select only one color from listed below" maxLimit="1" showButton="" isPriority="" template="" orientation="">
+            <option id="question585703942986" pid="question554389375033" toid="" tags="option" title="Green" >
+                <select_value>Green</select_value>
+                <select_resp_label>Green</select_resp_label>
+                <select_label></select_label>
+                <select_description></select_description>
+                <select_image>deadpool-pikachu-spiderman-and-deadpool2.jpg</select_image>
+
+                <slider_type></slider_type>
+                <slider_name></slider_name>
+                <slider_low_val></slider_low_val>
+                <slider_high_val></slider_high_val>
+                <slider_step></slider_step>
+                <slider_init_val></slider_init_val>
+                <slider_init_val_2></slider_init_val_2>
+                <slider_is_transparent></slider_is_transparent>
+                <slider_show_minmax></slider_show_minmax>
+                <slider_show_minmax_text_only></slider_show_minmax_text_only>
+                <slider_min_text></slider_min_text>
+                <slider_max_text></slider_max_text>
+                <slider_grid_legend_type></slider_grid_legend_type>
+                <slider_is_prefix_text></slider_is_prefix_text>
+                <slider_prefix_text></slider_prefix_text>
+                <slider_val_position></slider_val_position>
+
+                <input_type></input_type>
+                <input_init_val></input_init_val>
+                <input_placeholder></input_placeholder>
+                <input_is_required></input_is_required>
+                <input_validation_pattern></input_validation_pattern>
+                <input_custom_error_msg></input_custom_error_msg>
+                <input_is_custom_error_msg_ui></input_is_custom_error_msg_ui>
+                <input_on_click_js></input_on_click_js>
+            </option>
+            <option id="question1352959337821" pid="question554389375033" toid="" tags="option" title="Red" >
+                <select_value>Red</select_value>
+                <select_resp_label>Red</select_resp_label>
+                <select_label></select_label>
+                <select_description></select_description>
+                <select_image>deadpool-pikachu-spiderman-and-deadpool.jpg</select_image>
+
+                <slider_type></slider_type>
+                <slider_name></slider_name>
+                <slider_low_val></slider_low_val>
+                <slider_high_val></slider_high_val>
+                <slider_step></slider_step>
+                <slider_init_val></slider_init_val>
+                <slider_init_val_2></slider_init_val_2>
+                <slider_is_transparent></slider_is_transparent>
+                <slider_show_minmax></slider_show_minmax>
+                <slider_show_minmax_text_only></slider_show_minmax_text_only>
+                <slider_min_text></slider_min_text>
+                <slider_max_text></slider_max_text>
+                <slider_grid_legend_type></slider_grid_legend_type>
+                <slider_is_prefix_text></slider_is_prefix_text>
+                <slider_prefix_text></slider_prefix_text>
+                <slider_val_position></slider_val_position>
+
+                <input_type></input_type>
+                <input_init_val></input_init_val>
+                <input_placeholder></input_placeholder>
+                <input_is_required></input_is_required>
+                <input_validation_pattern></input_validation_pattern>
+                <input_custom_error_msg></input_custom_error_msg>
+                <input_is_custom_error_msg_ui></input_is_custom_error_msg_ui>
+                <input_on_click_js></input_on_click_js>
+            </option>
+        </form_element>
+    </node>
+
+    <node id="question350416077176" pid="question585703942986" toid="" tags="question" title="Music" img="/designView/images/icon/single_slider.png" type="MultiSelect" staticTitle="Static Page Title"  staticDescr="Static Page Description" bgSource="" bgSourceType="img" buttonLbl="Next" boost="" showRule="" settings="">
+        <form_element type="Select" name="Responses1" title="Your prefered music?" subtitle="Select all thats apply" maxLimit="2" showButton="1" isPriority="" template="" orientation="">
+            <option id="Question4_A1" pid="" toid="" tags="option" title="Pop" >
+                <select_value>Pop</select_value>
+                <select_resp_label>Pop</select_resp_label>
+                <select_label></select_label>
+                <select_description></select_description>
+                <select_image>deadpool-pikachu-spiderman-and-deadpool2.jpg</select_image>
+
+                <slider_type></slider_type>
+                <slider_name></slider_name>
+                <slider_low_val></slider_low_val>
+                <slider_high_val></slider_high_val>
+                <slider_step></slider_step>
+                <slider_init_val></slider_init_val>
+                <slider_init_val_2></slider_init_val_2>
+                <slider_is_transparent></slider_is_transparent>
+                <slider_show_minmax></slider_show_minmax>
+                <slider_show_minmax_text_only></slider_show_minmax_text_only>
+                <slider_min_text></slider_min_text>
+                <slider_max_text></slider_max_text>
+                <slider_grid_legend_type></slider_grid_legend_type>
+                <slider_is_prefix_text></slider_is_prefix_text>
+                <slider_prefix_text></slider_prefix_text>
+                <slider_val_position></slider_val_position>
+
+                <input_type></input_type>
+                <input_init_val></input_init_val>
+                <input_placeholder></input_placeholder>
+                <input_is_required></input_is_required>
+                <input_validation_pattern></input_validation_pattern>
+                <input_custom_error_msg></input_custom_error_msg>
+                <input_is_custom_error_msg_ui></input_is_custom_error_msg_ui>
+                <input_on_click_js></input_on_click_js>
+            </option>
+            <option id="Question4_A1" pid="" toid="" tags="option" title="Rock" >
+                <select_value>Rock</select_value>
+                <select_resp_label>Rock</select_resp_label>
+                <select_label></select_label>
+                <select_description></select_description>
+                <select_image>deadpool-pikachu-spiderman-and-deadpool.jpg</select_image>
+
+                <slider_type></slider_type>
+                <slider_name></slider_name>
+                <slider_low_val></slider_low_val>
+                <slider_high_val></slider_high_val>
+                <slider_step></slider_step>
+                <slider_init_val></slider_init_val>
+                <slider_init_val_2></slider_init_val_2>
+                <slider_is_transparent></slider_is_transparent>
+                <slider_show_minmax></slider_show_minmax>
+                <slider_show_minmax_text_only></slider_show_minmax_text_only>
+                <slider_min_text></slider_min_text>
+                <slider_max_text></slider_max_text>
+                <slider_grid_legend_type></slider_grid_legend_type>
+                <slider_is_prefix_text></slider_is_prefix_text>
+                <slider_prefix_text></slider_prefix_text>
+                <slider_val_position></slider_val_position>
+
+                <input_type></input_type>
+                <input_init_val></input_init_val>
+                <input_placeholder></input_placeholder>
+                <input_is_required></input_is_required>
+                <input_validation_pattern></input_validation_pattern>
+                <input_custom_error_msg></input_custom_error_msg>
+                <input_is_custom_error_msg_ui></input_is_custom_error_msg_ui>
+                <input_on_click_js></input_on_click_js>
+            </option>
+        </form_element>
+    </node>
+
+    <node id="question1541215295600" pid="question1352959337821" toid="question752689704815" tags="question" title="OS" img="/designView/images/icon/single_slider.png" type="Select" staticTitle="Static Page Title"  staticDescr="Static Page Description" bgSource="" bgSourceType="img" buttonLbl="Next" boost="" showRule="" settings="">
+        <form_element type="Select" name="Responses1" title="Your prefered OS?" subtitle="Select only one color from listed below" maxLimit="1" showButton="" isPriority="" template="" orientation="">
+            <option id="Question2_A1" pid="" toid="" tags="option" title="Android">
+                <select_value>Android</select_value>
+                <select_resp_label>Android</select_resp_label>
+                <select_label></select_label>
+                <select_description></select_description>
+                <select_image>deadpool-pikachu-spiderman-and-deadpool2.jpg</select_image>
+
+                <slider_type></slider_type>
+                <slider_name></slider_name>
+                <slider_low_val></slider_low_val>
+                <slider_high_val></slider_high_val>
+                <slider_step></slider_step>
+                <slider_init_val></slider_init_val>
+                <slider_init_val_2></slider_init_val_2>
+                <slider_is_transparent></slider_is_transparent>
+                <slider_show_minmax></slider_show_minmax>
+                <slider_show_minmax_text_only></slider_show_minmax_text_only>
+                <slider_min_text></slider_min_text>
+                <slider_max_text></slider_max_text>
+                <slider_grid_legend_type></slider_grid_legend_type>
+                <slider_is_prefix_text></slider_is_prefix_text>
+                <slider_prefix_text></slider_prefix_text>
+                <slider_val_position></slider_val_position>
+
+                <input_type></input_type>
+                <input_init_val></input_init_val>
+                <input_placeholder></input_placeholder>
+                <input_is_required></input_is_required>
+                <input_validation_pattern></input_validation_pattern>
+                <input_custom_error_msg></input_custom_error_msg>
+                <input_is_custom_error_msg_ui></input_is_custom_error_msg_ui>
+                <input_on_click_js></input_on_click_js>
+            </option>
+            <option id="Question2_A2" pid="" toid="" tags="option" title="iOS">
+                <select_value>iOS</select_value>
+                <select_resp_label>iOS</select_resp_label>
+                <select_label></select_label>
+                <select_description></select_description>
+                <select_image>deadpool-pikachu-spiderman-and-deadpool.jpg</select_image>
+
+                <slider_type></slider_type>
+                <slider_name></slider_name>
+                <slider_low_val></slider_low_val>
+                <slider_high_val></slider_high_val>
+                <slider_step></slider_step>
+                <slider_init_val></slider_init_val>
+                <slider_init_val_2></slider_init_val_2>
+                <slider_is_transparent></slider_is_transparent>
+                <slider_show_minmax></slider_show_minmax>
+                <slider_show_minmax_text_only></slider_show_minmax_text_only>
+                <slider_min_text></slider_min_text>
+                <slider_max_text></slider_max_text>
+                <slider_grid_legend_type></slider_grid_legend_type>
+                <slider_is_prefix_text></slider_is_prefix_text>
+                <slider_prefix_text></slider_prefix_text>
+                <slider_val_position></slider_val_position>
+
+                <input_type></input_type>
+                <input_init_val></input_init_val>
+                <input_placeholder></input_placeholder>
+                <input_is_required></input_is_required>
+                <input_validation_pattern></input_validation_pattern>
+                <input_custom_error_msg></input_custom_error_msg>
+                <input_is_custom_error_msg_ui></input_is_custom_error_msg_ui>
+                <input_on_click_js></input_on_click_js>
+            </option>
+            <option id="Question2_A2" pid="" toid="" tags="option" title="Other">
+                <select_value>Other</select_value>
+                <select_resp_label>Other</select_resp_label>
+                <select_label></select_label>
+                <select_description></select_description>
+                <select_image>deadpool-pikachu-spiderman-and-deadpool2.jpg</select_image>
+
+                <slider_type></slider_type>
+                <slider_name></slider_name>
+                <slider_low_val></slider_low_val>
+                <slider_high_val></slider_high_val>
+                <slider_step></slider_step>
+                <slider_init_val></slider_init_val>
+                <slider_init_val_2></slider_init_val_2>
+                <slider_is_transparent></slider_is_transparent>
+                <slider_show_minmax></slider_show_minmax>
+                <slider_show_minmax_text_only></slider_show_minmax_text_only>
+                <slider_min_text></slider_min_text>
+                <slider_max_text></slider_max_text>
+                <slider_grid_legend_type></slider_grid_legend_type>
+                <slider_is_prefix_text></slider_is_prefix_text>
+                <slider_prefix_text></slider_prefix_text>
+                <slider_val_position></slider_val_position>
+
+                <input_type></input_type>
+                <input_init_val></input_init_val>
+                <input_placeholder></input_placeholder>
+                <input_is_required></input_is_required>
+                <input_validation_pattern></input_validation_pattern>
+                <input_custom_error_msg></input_custom_error_msg>
+                <input_is_custom_error_msg_ui></input_is_custom_error_msg_ui>
+                <input_on_click_js></input_on_click_js>
+            </option>
+        </form_element>
+    </node>
+
+    <node id="question752689704815" pid="question350416077176" toid="" tags="question" title="Brand" img="/designView/images/icon/single_slider.png" type="Select" staticTitle="Static Page Title"  staticDescr="Static Page Description" bgSource="" bgSourceType="img" buttonLbl="Next" boost="" showRule="" settings="">
+        <form_element type="Select" name="Responses1" title="Your prefered Brand?" subtitle="Select one from listed below" maxLimit="1" showButton="" isPriority="" template="" orientation="">
+            <option id="Question5_A1" pid="" toid="" tags="option" title="Apple">
+                <select_value>Apple</select_value>
+                <select_resp_label>Apple</select_resp_label>
+                <select_label></select_label>
+                <select_description></select_description>
+                <select_image>deadpool-pikachu-spiderman-and-deadpool2.jpg</select_image>
+
+                <slider_type></slider_type>
+                <slider_name></slider_name>
+                <slider_low_val></slider_low_val>
+                <slider_high_val></slider_high_val>
+                <slider_step></slider_step>
+                <slider_init_val></slider_init_val>
+                <slider_init_val_2></slider_init_val_2>
+                <slider_is_transparent></slider_is_transparent>
+                <slider_show_minmax></slider_show_minmax>
+                <slider_show_minmax_text_only></slider_show_minmax_text_only>
+                <slider_min_text></slider_min_text>
+                <slider_max_text></slider_max_text>
+                <slider_grid_legend_type></slider_grid_legend_type>
+                <slider_is_prefix_text></slider_is_prefix_text>
+                <slider_prefix_text></slider_prefix_text>
+                <slider_val_position></slider_val_position>
+
+                <input_type></input_type>
+                <input_init_val></input_init_val>
+                <input_placeholder></input_placeholder>
+                <input_is_required></input_is_required>
+                <input_validation_pattern></input_validation_pattern>
+                <input_custom_error_msg></input_custom_error_msg>
+                <input_is_custom_error_msg_ui></input_is_custom_error_msg_ui>
+                <input_on_click_js></input_on_click_js>
+            </option>
+            <option id="Question5_A2" pid="" toid="" tags="option" title="Samsung">
+                <select_value>Samsung</select_value>
+                <select_resp_label>Samsung</select_resp_label>
+                <select_label></select_label>
+                <select_description></select_description>
+                <select_image>deadpool-pikachu-spiderman-and-deadpool.jpg</select_image>
+
+                <slider_type></slider_type>
+                <slider_name></slider_name>
+                <slider_low_val></slider_low_val>
+                <slider_high_val></slider_high_val>
+                <slider_step></slider_step>
+                <slider_init_val></slider_init_val>
+                <slider_init_val_2></slider_init_val_2>
+                <slider_is_transparent></slider_is_transparent>
+                <slider_show_minmax></slider_show_minmax>
+                <slider_show_minmax_text_only></slider_show_minmax_text_only>
+                <slider_min_text></slider_min_text>
+                <slider_max_text></slider_max_text>
+                <slider_grid_legend_type></slider_grid_legend_type>
+                <slider_is_prefix_text></slider_is_prefix_text>
+                <slider_prefix_text></slider_prefix_text>
+                <slider_val_position></slider_val_position>
+
+                <input_type></input_type>
+                <input_init_val></input_init_val>
+                <input_placeholder></input_placeholder>
+                <input_is_required></input_is_required>
+                <input_validation_pattern></input_validation_pattern>
+                <input_custom_error_msg></input_custom_error_msg>
+                <input_is_custom_error_msg_ui></input_is_custom_error_msg_ui>
+                <input_on_click_js></input_on_click_js>
+            </option>
+        </form_element>
+    </node>
+
+    <node id="question231036895487" pid="nodeStart" toid="" tags="intro" title="Intro" img="/designView/images/icon/single_slider.png" type="Intro" staticTitle="Welcome to Voyager"  staticDescr="Pretty cool backend for IGS" bgSource="deadpool-pikachu-spiderman-and-deadpool3.jpg" bgSourceType="img" buttonLbl="Next" boost="" showRule="" settings="">
+        <form_element type="" name="" title="" subtitle="" maxLimit="" showButton="" isPriority="" template="" orientation="">
+            <option id="" tags="" pid="" title="" toid="">
+                <select_value></select_value>
+                <select_resp_label></select_resp_label>
+                <select_label></select_label>
+                <select_description></select_description>
+                <select_image></select_image>
+
+                <slider_type></slider_type>
+                <slider_name></slider_name>
+                <slider_low_val></slider_low_val>
+                <slider_high_val></slider_high_val>
+                <slider_step></slider_step>
+                <slider_init_val></slider_init_val>
+                <slider_init_val_2></slider_init_val_2>
+                <slider_is_transparent></slider_is_transparent>
+                <slider_show_minmax></slider_show_minmax>
+                <slider_show_minmax_text_only></slider_show_minmax_text_only>
+                <slider_min_text></slider_min_text>
+                <slider_max_text></slider_max_text>
+                <slider_grid_legend_type></slider_grid_legend_type>
+                <slider_is_prefix_text></slider_is_prefix_text>
+                <slider_prefix_text></slider_prefix_text>
+                <slider_val_position></slider_val_position>
+
+                <input_type></input_type>
+                <input_init_val></input_init_val>
+                <input_placeholder></input_placeholder>
+                <input_is_required></input_is_required>
+                <input_validation_pattern></input_validation_pattern>
+                <input_custom_error_msg></input_custom_error_msg>
+                <input_is_custom_error_msg_ui></input_is_custom_error_msg_ui>
+                <input_on_click_js></input_on_click_js>
+            </option>
+        </form_element>
+    </node>
+
+    <node id="question357011973912" pid="question752689704815" toid="" tags="recommendations" title="Recommendations" img="/designView/images/icon/single_slider.png" type="Recs" staticTitle="Voyager Recommendations"  staticDescr="Recommended products Recs page description" bgSource="deadpool-pikachu-spiderman-and-deadpool3.jpg" bgSourceType="img" buttonLbl="Next" boost="" showRule="" settings="">
+        <form_element type="" name="" title="" subtitle="" maxLimit="" showButton="" isPriority="" template="" orientation="">
+            <option id="" tags="" pid="" title="" toid="">
+                <select_value></select_value>
+                <select_resp_label></select_resp_label>
+                <select_label></select_label>
+                <select_description></select_description>
+                <select_image></select_image>
+
+                <slider_type></slider_type>
+                <slider_name></slider_name>
+                <slider_low_val></slider_low_val>
+                <slider_high_val></slider_high_val>
+                <slider_step></slider_step>
+                <slider_init_val></slider_init_val>
+                <slider_init_val_2></slider_init_val_2>
+                <slider_is_transparent></slider_is_transparent>
+                <slider_show_minmax></slider_show_minmax>
+                <slider_show_minmax_text_only></slider_show_minmax_text_only>
+                <slider_min_text></slider_min_text>
+                <slider_max_text></slider_max_text>
+                <slider_grid_legend_type></slider_grid_legend_type>
+                <slider_is_prefix_text></slider_is_prefix_text>
+                <slider_prefix_text></slider_prefix_text>
+                <slider_val_position></slider_val_position>
+
+                <input_type></input_type>
+                <input_init_val></input_init_val>
+                <input_placeholder></input_placeholder>
+                <input_is_required></input_is_required>
+                <input_validation_pattern></input_validation_pattern>
+                <input_custom_error_msg></input_custom_error_msg>
+                <input_is_custom_error_msg_ui></input_is_custom_error_msg_ui>
+                <input_on_click_js></input_on_click_js>
+            </option>
+        </form_element>
+    </node>
+</nodes>

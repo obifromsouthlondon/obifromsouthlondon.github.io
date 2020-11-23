@@ -1,0 +1,169 @@
+ html,
+ body {
+     width: 100%;
+     height: 100%;
+     padding: 0;
+     margin: 0;
+     font-family: Helvetica;
+     background: #F6F6F6;
+ }
+
+ .buttons {
+     background: #fff;
+     padding: 15px;
+ }
+
+ .buttons button {
+     background: #0F1734;
+     border: 1px solid#0F1734;
+     color: #fff;
+     padding: 8px 15px;
+     border-radius: 5px;
+     box-shadow: none;
+     cursor: pointer;
+     transition: 0.5s;
+ }
+
+ .ui-widget.ui-widget-content {
+     z-index: 9999;
+ }
+
+ .buttons button:hover {
+     background: transparent;
+     color: #0F1734;
+ }
+
+ .buttons button.btn-green {
+     background: #00b35f;
+     border: 1px solid #00b35f;
+     color: #fff;
+     padding: 8px 15px;
+     border-radius: 5px;
+     box-shadow: none;
+     cursor: pointer;
+     transition: 0.5s;
+ }
+
+ .buttons button.btn-green:hover {
+     background: transparent;
+     color: #00b35f;
+ }
+
+ #main-grid {
+     background-image: url(../images/grid1.png);
+     background-size: 100vh;
+ }
+
+ #tree {
+     width: 100%;
+     height: calc(100vh - 30px) !important;
+     overflow: auto !important;
+     z-index: 9999;
+ }
+
+ #tree>svg {}
+
+ .createbox {
+     background-color: #0F1734;
+     min-width: 185px;
+     border-radius: 10px;
+     margin-left: 15px;
+     box-shadow: 1px 2px 5px #d0d0d052;
+     margin-top: 10px;
+     height: 100%;
+     padding-bottom: 8px;
+ }
+
+ .createbox .box-list {
+     padding: 8px;
+     color: #fff;
+     border-top-left-radius: 8px;
+     border-top-right-radius: 8px;
+     cursor: pointer;
+     font-size: 14px
+ }
+
+ .createbox .box-list.bg-white {
+     background-color: #fff;
+     color: #0F1734 !important;
+ }
+
+ .box-list img {
+     vertical-align: middle;
+     margin-right: 5px;
+ }
+
+ text {
+     white-space: break-spaces;
+     word-break: break-all;
+ }
+
+ .ui-widget.ui-widget-content {
+     padding: 0;
+     border: 0;
+     box-shadow: 0px 0px 7px #0000007d;
+ }
+
+ .ui-widget-header {
+     background: #0f1734;
+     color: #fff;
+ }
+
+ .ui-widget-header .ui-button {
+     background: transparent;
+     border: 0;
+ }
+
+ .ui-widget-header .ui-button span {
+     filter: brightness(100);
+ }
+
+ #editForm button {
+     background: #0f1734;
+     border: 0;
+     color: #fff;
+     padding: 8px 0;
+     border-radius: 5px;
+     font-size: 14px;
+ }
+
+ #editForm input {
+     color: #000;
+     font-size: 13px;
+     opacity: 1;
+     width: auto;
+     padding: 5px;
+ }
+
+ .clink-selected path {
+     stroke: #aeaeae !important;
+     marker-start: url(#dotBlue) !important;
+     marker-end: url(#arrow) !important;
+ }
+
+ .selected rect {
+     stroke: red !important;
+     stroke-width: 3px;
+ }
+
+ .bg_red {
+     background-color: red !important;
+ }
+
+ .grid {
+     /* border: 1px solid #ccc;
+            border-width: 1px 0 0 1px; */
+     width: calc(100% - 215px) !important;
+     height: 100vh !important;
+     position: absolute;
+     top: 55px;
+     left: 215px;
+     z-index: 0;
+ }
+
+ .grid div {
+     border: 0.4px solid #cccccc5c;
+     float: left;
+     width: 40px !important;
+     height: 40px !important;
+ }

@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clients>
+    <client name="White Label">
+        <clientType>Other</clientType>
+        <clientVersion>Stand alone version</clientVersion>
+        <clientLink>https://demo-t1-public.conversity.com/</clientLink>
+        <clientAppURL>https://demo-t1-public.conversity.com/service/remote/get-process-view?viewId=Process</clientAppURL>
+        <clientS3Folder>Conversity%20Template%20One</clientS3Folder>
+        <clientImgSrc>white-label--stand-alone.jpg</clientImgSrc>
+        <clientDesignSrc>sport</clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="White Label">
+        <clientType>Other</clientType>
+        <clientVersion>Overlay version</clientVersion>
+        <clientLink>page.html</clientLink>
+        <clientAppURL>https://demo-t1-public.conversity.com/service/remote/get-process-view?viewId=Process</clientAppURL>
+        <clientS3Folder>Conversity%20Template%20One</clientS3Folder>
+        <clientImgSrc>white-label--overlay.jpg</clientImgSrc>
+        <clientDesignSrc>sport</clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="White Label">
+        <clientType>Other</clientType>
+        <clientVersion>Component version</clientVersion>
+        <clientLink>page.html</clientLink>
+        <clientAppURL>https://demo-t1-public.conversity.com/service/remote/get-process-view?viewId=Process</clientAppURL>
+        <clientS3Folder>Conversity%20Template%20One</clientS3Folder>
+        <clientImgSrc>white-label--component.jpg</clientImgSrc>
+        <clientDesignSrc>sport</clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="White Label">
+        <clientType>Other</clientType>
+        <clientVersion>Prototype version</clientVersion>
+        <clientLink>https://invis.io/34TXJ53XSMB</clientLink>
+        <clientAppURL></clientAppURL>
+        <clientS3Folder></clientS3Folder>
+        <clientImgSrc>white-label--invision.jpg</clientImgSrc>
+        <clientDesignSrc></clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+
+    <client name="Sunrise">
+        <clientType>TELCO</clientType>
+        <clientVersion>Stand alone version</clientVersion>
+        <clientLink>https://demo-sunrise-public.conversity.com/</clientLink>
+        <clientAppURL>https://demo-sunrise-public.conversity.com/service/remote/get-process-view?viewId=Process</clientAppURL>
+        <clientS3Folder>Sunrise</clientS3Folder>
+        <clientImgSrc>sunrise--stand-alone.jpg</clientImgSrc>
+        <clientDesignSrc>TELCO</clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="Sunrise">
+        <clientType>TELCO</clientType>
+        <clientVersion>Overlay version</clientVersion>
+        <clientLink>page.html</clientLink>
+        <clientAppURL>https://demo-sunrise-public.conversity.com/service/remote/get-process-view?viewId=Process</clientAppURL>
+        <clientS3Folder>Sunrise</clientS3Folder>
+        <clientImgSrc>sunrise--overlay.jpg</clientImgSrc>
+        <clientDesignSrc>TELCO</clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="Sunrise">
+        <clientType>TELCO</clientType>
+        <clientVersion>Component version</clientVersion>
+        <clientLink>page.html</clientLink>
+        <clientAppURL>https://demo-sunrise-public.conversity.com/service/remote/get-process-view?viewId=Process</clientAppURL>
+        <clientS3Folder>Sunrise</clientS3Folder>
+        <clientImgSrc>sunrise--component.jpg</clientImgSrc>
+        <clientDesignSrc>TELCO</clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+
+    <client name="McCabes Pharmacy">
+        <clientType>Health</clientType>
+        <clientVersion>Stand alone version</clientVersion>
+        <clientLink>https://demo-mccabespharmacy-public.conversity.com/</clientLink>
+        <clientAppURL>https://demo-mccabespharmacy-public.conversity.com/service/remote/get-process-view?viewId=SYSV1</clientAppURL>
+        <clientS3Folder>McCabes%20Pharmacy</clientS3Folder>
+        <clientImgSrc>mccabes--stand-alone.jpg</clientImgSrc>
+        <clientDesignSrc>sport</clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="McCabes Pharmacy">
+        <clientType>Health</clientType>
+        <clientVersion>Overlay version</clientVersion>
+        <clientLink>page.html</clientLink>
+        <clientAppURL>https://demo-mccabespharmacy-public.conversity.com/service/remote/get-process-view?viewId=SYSV1</clientAppURL>
+        <clientS3Folder>McCabes%20Pharmacy</clientS3Folder>
+        <clientImgSrc>mccabes--overlay.jpg</clientImgSrc>
+        <clientDesignSrc>sport</clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="McCabes Pharmacy">
+        <clientType>Health</clientType>
+        <clientVersion>Component version</clientVersion>
+        <clientLink>page.html</clientLink>
+        <clientAppURL>https://demo-mccabespharmacy-public.conversity.com/service/remote/get-process-view?viewId=SYSV1</clientAppURL>
+        <clientS3Folder>McCabes%20Pharmacy</clientS3Folder>
+        <clientImgSrc>mccabes--component.jpg</clientImgSrc>
+        <clientDesignSrc>sport</clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+
+    <client name="Revive Active">
+        <clientType>Health</clientType>
+        <clientVersion>Stand alone version</clientVersion>
+        <clientLink>https://demo-reviveactive-public.conversity.com/</clientLink>
+        <clientAppURL>https://demo-reviveactive-public.conversity.com/service/remote/get-process-view?viewId=SYV1PROCES</clientAppURL>
+        <clientS3Folder>Revive%20Active</clientS3Folder>
+        <clientImgSrc>revive-active--stand-alone.jpg</clientImgSrc>
+        <clientDesignSrc>sport</clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="Revive Active">
+        <clientType>Health</clientType>
+        <clientVersion>Overlay version</clientVersion>
+        <clientLink>page.html</clientLink>
+        <clientAppURL>https://demo-reviveactive-public.conversity.com/service/remote/get-process-view?viewId=SYV1PROCES</clientAppURL>
+        <clientS3Folder>Revive%20Active</clientS3Folder>
+        <clientImgSrc>revive-active--overlay.jpg</clientImgSrc>
+        <clientDesignSrc>sport</clientDesignSrc>
+        <clientScripts>https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js</clientScripts>
+    </client>
+    <client name="Revive Active">
+        <clientType>Health</clientType>
+        <clientVersion>Component version</clientVersion>
+        <clientLink>page.html</clientLink>
+        <clientAppURL>https://demo-reviveactive-public.conversity.com/service/remote/get-process-view?viewId=SYV1PROCES</clientAppURL>
+        <clientS3Folder>Revive%20Active</clientS3Folder>
+        <clientImgSrc>revive-active--component.jpg</clientImgSrc>
+        <clientDesignSrc>sport</clientDesignSrc>
+        <clientScripts>https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js</clientScripts>
+    </client>
+    <client name="White Label">
+        <clientType>Other</clientType>
+        <clientVersion>Admin version</clientVersion>
+        <clientLink>https://demo-t1-admin.conversity.com/</clientLink>
+        <clientAppURL>https://demo-t1-admin.conversity.com/</clientAppURL>
+        <clientS3Folder></clientS3Folder>
+        <clientImgSrc>admin.png</clientImgSrc>
+        <clientDesignSrc></clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+
+    <client name="BOOTS UK- Skin">
+        <clientType>Other</clientType>
+        <clientVersion>Prototype version</clientVersion>
+        <clientLink>https://invis.io/26QRBXWMK9D</clientLink>
+        <clientAppURL></clientAppURL>
+        <clientS3Folder></clientS3Folder>
+        <clientImgSrc>boot-uk-skin--invision.jpg</clientImgSrc>
+        <clientDesignSrc></clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="LIZ EARLE [Mobile]">
+        <clientType>Other</clientType>
+        <clientVersion>Prototype version</clientVersion>
+        <clientLink>https://invis.io/7VRDBM35D3Z</clientLink>
+        <clientAppURL></clientAppURL>
+        <clientS3Folder></clientS3Folder>
+        <clientImgSrc>liz-earle--invision.jpg</clientImgSrc>
+        <clientDesignSrc></clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="Feel Unique [Mobile]">
+        <clientType>Other</clientType>
+        <clientVersion>Prototype version</clientVersion>
+        <clientLink>https://projects.invisionapp.com/share/SVQBGB4UKA8#/screens</clientLink>
+        <clientAppURL></clientAppURL>
+        <clientS3Folder></clientS3Folder>
+        <clientImgSrc>feel-unique--invision.jpg</clientImgSrc>
+        <clientDesignSrc></clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="PRAMS and CAR SEAT">
+        <clientType>Other</clientType>
+        <clientVersion>Prototype version</clientVersion>
+        <clientLink>https://preview.uxpin.com/005c217c918175c8002862d153c8fa847479a4f1#/pages/96715973</clientLink>
+        <clientAppURL></clientAppURL>
+        <clientS3Folder></clientS3Folder>
+        <clientImgSrc>prams-cars-seats--uxpin.jpg</clientImgSrc>
+        <clientDesignSrc></clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="Conversity Optom">
+        <clientType>Other</clientType>
+        <clientVersion>Prototype version</clientVersion>
+        <clientLink>https://invis.io/BYSQNJ5DMNG</clientLink>
+        <clientAppURL></clientAppURL>
+        <clientS3Folder></clientS3Folder>
+        <clientImgSrc>optom--invision.jpg</clientImgSrc>
+        <clientDesignSrc></clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="Sofos">
+        <clientType>Other</clientType>
+        <clientVersion>Prototype version</clientVersion>
+        <clientLink>https://preview.uxpin.com/cba0ef19a151ba170a1fbc6d52bd737e4270c1d7#/pages/97985868/simulate/no-panels</clientLink>
+        <clientAppURL></clientAppURL>
+        <clientS3Folder></clientS3Folder>
+        <clientImgSrc>sofos--uxpin.jpg</clientImgSrc>
+        <clientDesignSrc></clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="Swarovski [Desktop]">
+        <clientType>Other</clientType>
+        <clientVersion>Prototype version</clientVersion>
+        <clientLink>https://invis.io/FQUSW4G8XG5</clientLink>
+        <clientAppURL></clientAppURL>
+        <clientS3Folder></clientS3Folder>
+        <clientImgSrc>swarovski--invision.jpg</clientImgSrc>
+        <clientDesignSrc></clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="Swarovski [Mobile]">
+        <clientType>Other</clientType>
+        <clientVersion>Prototype version</clientVersion>
+        <clientLink>https://projects.invisionapp.com/share/ZTUTJ6N8U7R#/screens</clientLink>
+        <clientAppURL></clientAppURL>
+        <clientS3Folder></clientS3Folder>
+        <clientImgSrc>swarovski-mobile--invision.jpg</clientImgSrc>
+        <clientDesignSrc></clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="WEX [Desktop]">
+        <clientType>Other</clientType>
+        <clientVersion>Prototype version</clientVersion>
+        <clientLink>https://invis.io/B4VKZCG8FQG</clientLink>
+        <clientAppURL></clientAppURL>
+        <clientS3Folder></clientS3Folder>
+        <clientImgSrc>wex--invision.jpg</clientImgSrc>
+        <clientDesignSrc></clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="WEX [Mobile]">
+        <clientType>Other</clientType>
+        <clientVersion>Prototype version</clientVersion>
+        <clientLink>https://invis.io/MTVKZBD2JHB</clientLink>
+        <clientAppURL></clientAppURL>
+        <clientS3Folder></clientS3Folder>
+        <clientImgSrc>wex-mobile--invision.jpg</clientImgSrc>
+        <clientDesignSrc></clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="Qaleon Cruise Selector [Unbranded]">
+        <clientType>Other</clientType>
+        <clientVersion>Prototype version</clientVersion>
+        <clientLink>https://invis.io/ZHVMJ8TP57M</clientLink>
+        <clientAppURL></clientAppURL>
+        <clientS3Folder></clientS3Folder>
+        <clientImgSrc>qaleon-unbranded--invision.jpg</clientImgSrc>
+        <clientDesignSrc></clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="Qaleon Cruise Selector [Branded]">
+        <clientType>Other</clientType>
+        <clientVersion>Prototype version</clientVersion>
+        <clientLink>https://invis.io/QFVLYQYDKPV</clientLink>
+        <clientAppURL></clientAppURL>
+        <clientS3Folder></clientS3Folder>
+        <clientImgSrc>qaleon-branded--invision.jpg</clientImgSrc>
+        <clientDesignSrc></clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="EE Retail [Phase 1]">
+        <clientType>Other</clientType>
+        <clientVersion>Prototype version</clientVersion>
+        <clientLink>https://projects.invisionapp.com/share/DTQXLUH6CHR#/screens</clientLink>
+        <clientAppURL></clientAppURL>
+        <clientS3Folder></clientS3Folder>
+        <clientImgSrc>ee-retail--invision.jpg</clientImgSrc>
+        <clientDesignSrc></clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="EE Retail [Phase 2]">
+        <clientType>Other</clientType>
+        <clientVersion>Prototype version</clientVersion>
+        <clientLink>https://projects.invisionapp.com/share/TES3JMPCGFR#/screens</clientLink>
+        <clientAppURL></clientAppURL>
+        <clientS3Folder></clientS3Folder>
+        <clientImgSrc>ee-retail-v2--invision.jpg</clientImgSrc>
+        <clientDesignSrc></clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="EE Retail Service Journey [New]">
+        <clientType>Other</clientType>
+        <clientVersion>Prototype version</clientVersion>
+        <clientLink>https://projects.invisionapp.com/share/DCSJ62RUHFP</clientLink>
+        <clientAppURL></clientAppURL>
+        <clientS3Folder></clientS3Folder>
+        <clientImgSrc>ee-retail-service--invision.jpg</clientImgSrc>
+        <clientDesignSrc></clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="EE Retail Service Journey [Old]">
+        <clientType>Other</clientType>
+        <clientVersion>Prototype version</clientVersion>
+        <clientLink>https://invis.io/6USH1NZ38VT</clientLink>
+        <clientAppURL></clientAppURL>
+        <clientS3Folder></clientS3Folder>
+        <clientImgSrc>ee-retail-service-old--invision.jpg</clientImgSrc>
+        <clientDesignSrc></clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="EE HBB+TV">
+        <clientType>Other</clientType>
+        <clientVersion>Prototype version</clientVersion>
+        <clientLink>https://invis.io/DCSJ62RUHFP</clientLink>
+        <clientAppURL></clientAppURL>
+        <clientS3Folder></clientS3Folder>
+        <clientImgSrc>ee-hbb-tv--invision.jpg</clientImgSrc>
+        <clientDesignSrc></clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="EE Revamp">
+        <clientType>Other</clientType>
+        <clientVersion>Prototype version</clientVersion>
+        <clientLink>https://invis.io/TES3JMPCGFR</clientLink>
+        <clientAppURL></clientAppURL>
+        <clientS3Folder></clientS3Folder>
+        <clientImgSrc>ee-revamp--invision.jpg</clientImgSrc>
+        <clientDesignSrc></clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="EE CRF">
+        <clientType>Other</clientType>
+        <clientVersion>Prototype version</clientVersion>
+        <clientLink>https://projects.invisionapp.com/share/S7TQ6SPP9BQ#/screens/381862668</clientLink>
+        <clientAppURL></clientAppURL>
+        <clientS3Folder></clientS3Folder>
+        <clientImgSrc>ee-crf--invision.jpg</clientImgSrc>
+        <clientDesignSrc></clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="EE SLC and NBA">
+        <clientType>Other</clientType>
+        <clientVersion>Prototype version</clientVersion>
+        <clientLink>https://invis.io/DCSJ62RUHFP</clientLink>
+        <clientAppURL></clientAppURL>
+        <clientS3Folder></clientS3Folder>
+        <clientImgSrc>ee-slc-nba--invision.jpg</clientImgSrc>
+        <clientDesignSrc></clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+
+    <client name="White Label [Animated]">
+        <clientType>Other</clientType>
+        <clientVersion>Stand alone version</clientVersion>
+        <clientLink>https://demo-t2-public.conversity.com/</clientLink>
+        <clientAppURL>https://demo-t2-public.conversity.com/service/remote/get-process-view?viewId=Process</clientAppURL>
+        <clientS3Folder>Conversity%20Template%20One</clientS3Folder>
+        <clientImgSrc>white-label-t2--stand-alone.jpg</clientImgSrc>
+        <clientDesignSrc>sport</clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="White Label [Animated]">
+        <clientType>Other</clientType>
+        <clientVersion>Overlay version</clientVersion>
+        <clientLink>page.html</clientLink>
+        <clientAppURL>https://demo-t2-public.conversity.com/service/remote/get-process-view?viewId=Process</clientAppURL>
+        <clientS3Folder>Conversity%20Template%20One</clientS3Folder>
+        <clientImgSrc>white-label-t2--overlay.jpg</clientImgSrc>
+        <clientDesignSrc>sport</clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="White Label [Animated]">
+        <clientType>Other</clientType>
+        <clientVersion>Component version</clientVersion>
+        <clientLink>page.html</clientLink>
+        <clientAppURL>https://demo-t2-public.conversity.com/service/remote/get-process-view?viewId=Process</clientAppURL>
+        <clientS3Folder>Conversity%20Template%20One</clientS3Folder>
+        <clientImgSrc>white-label-t2--component.jpg</clientImgSrc>
+        <clientDesignSrc>sport</clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+
+    <client name="LEGO [ToysRUs (Canada)]">
+        <clientType>Toys</clientType>
+        <clientVersion>Stand alone version</clientVersion>
+        <clientLink>https://demo-legoca-public.conversity.com/</clientLink>
+        <clientAppURL></clientAppURL>
+        <clientS3Folder></clientS3Folder>
+        <clientImgSrc>lego-ca--stand-alone.jpg</clientImgSrc>
+        <clientDesignSrc></clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="LEGO [ToysRUs (Canada)]">
+        <clientType>Toys</clientType>
+        <clientVersion>Overlay version</clientVersion>
+        <clientLink>page.html</clientLink>
+        <clientAppURL>https://demo-legoca-public.conversity.com/service/remote/get-process-view?viewId=SYSV1</clientAppURL>
+        <clientS3Folder>Lego%20CA</clientS3Folder>
+        <clientImgSrc>lego-ca--overlay.jpg</clientImgSrc>
+        <clientDesignSrc>lego</clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="LEGO [ToysRUs (Canada)]">
+        <clientType>Toys</clientType>
+        <clientVersion>Component version</clientVersion>
+        <clientLink>page.html</clientLink>
+        <clientAppURL>https://demo-legoca-public.conversity.com/service/remote/get-process-view?viewId=SYSV1</clientAppURL>
+        <clientS3Folder>Lego%20CA</clientS3Folder>
+        <clientImgSrc>lego-ca--component.jpg</clientImgSrc>
+        <clientDesignSrc>lego</clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+
+    <client name="The Phone Co-op B2C">
+        <clientType>TELCO</clientType>
+        <clientVersion>Stand alone version</clientVersion>
+        <clientLink>https://demo-phonecoop-b2c.conversity.com/</clientLink>
+        <clientAppURL></clientAppURL>
+        <clientS3Folder></clientS3Folder>
+        <clientImgSrc>phonecoop-b2c--stand-alone.jpg</clientImgSrc>
+        <clientDesignSrc></clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="The Phone Co-op B2C">
+        <clientType>TELCO</clientType>
+        <clientVersion>Overlay version</clientVersion>
+        <clientLink>page.html</clientLink>
+        <clientAppURL>https://demo-phonecoop-b2c.conversity.com/service/remote/get-process-view?viewId=SYSV1</clientAppURL>
+        <clientS3Folder>Phone%20Coop/B2C</clientS3Folder>
+        <clientImgSrc>phonecoop-b2c--overlay.jpg</clientImgSrc>
+        <clientDesignSrc>TELCO</clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="The Phone Co-op B2C">
+        <clientType>TELCO</clientType>
+        <clientVersion>Component version</clientVersion>
+        <clientLink>page.html</clientLink>
+        <clientAppURL>https://demo-phonecoop-b2c.conversity.com/service/remote/get-process-view?viewId=SYSV1</clientAppURL>
+        <clientS3Folder>Phone%20Coop/B2C</clientS3Folder>
+        <clientImgSrc>phonecoop-b2c--component.jpg</clientImgSrc>
+        <clientDesignSrc>TELCO</clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+
+    <client name="The Phone Co-op B2B">
+        <clientType>TELCO</clientType>
+        <clientVersion>Stand alone version</clientVersion>
+        <clientLink>https://demo-phonecoop-b2b.conversity.com/</clientLink>
+        <clientAppURL></clientAppURL>
+        <clientS3Folder></clientS3Folder>
+        <clientImgSrc>phonecoop-b2b--stand-alone.jpg</clientImgSrc>
+        <clientDesignSrc></clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="The Phone Co-op B2B">
+        <clientType>TELCO</clientType>
+        <clientVersion>Overlay version</clientVersion>
+        <clientLink>page.html</clientLink>
+        <clientAppURL>https://demo-phonecoop-b2b.conversity.com/service/remote/get-process-view?viewId=SYSV2</clientAppURL>
+        <clientS3Folder>Phone%20Coop/B2B</clientS3Folder>
+        <clientImgSrc>phonecoop-b2b--overlay.jpg</clientImgSrc>
+        <clientDesignSrc>TELCO</clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="The Phone Co-op B2B">
+        <clientType>TELCO</clientType>
+        <clientVersion>Component version</clientVersion>
+        <clientLink>page.html</clientLink>
+        <clientAppURL>https://demo-phonecoop-b2b.conversity.com/service/remote/get-process-view?viewId=SYSV2</clientAppURL>
+        <clientS3Folder>Phone%20Coop/B2B</clientS3Folder>
+        <clientImgSrc>phonecoop-b2b--component.jpg</clientImgSrc>
+        <clientDesignSrc>TELCO</clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+
+    <client name="Garmin">
+        <clientType>Health</clientType>
+        <clientVersion>Stand alone version</clientVersion>
+        <clientLink>https://demo-garmin-public.conversity.com/</clientLink>
+        <clientAppURL>https://demo-garmin-public.conversity.com/service/remote/get-process-view?viewId=Process</clientAppURL>
+        <clientS3Folder>Garmin</clientS3Folder>
+        <clientImgSrc>garmin--stand-alone.jpg</clientImgSrc>
+        <clientDesignSrc>sport</clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="Garmin">
+        <clientType>Health</clientType>
+        <clientVersion>Overlay version</clientVersion>
+        <clientLink>page.html</clientLink>
+        <clientAppURL>https://demo-garmin-public.conversity.com//service/remote/get-process-view?viewId=Process</clientAppURL>
+        <clientS3Folder>Garmin</clientS3Folder>
+        <clientImgSrc>garmin--overlay.jpg</clientImgSrc>
+        <clientDesignSrc>sport</clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+    <client name="Garmin">
+        <clientType>Health</clientType>
+        <clientVersion>Component version</clientVersion>
+        <clientLink>page.html</clientLink>
+        <clientAppURL>https://demo-garmin-public.conversity.com//service/remote/get-process-view?viewId=Process</clientAppURL>
+        <clientS3Folder>Garmin</clientS3Folder>
+        <clientImgSrc>garmin--component.jpg</clientImgSrc>
+        <clientDesignSrc>sport</clientDesignSrc>
+        <clientScripts></clientScripts>
+    </client>
+
+</clients>

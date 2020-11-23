@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voyager</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#00ce6d">
+    <link rel="shortcut icon" href="favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/app.js"></script>
+    
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/reset.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/main.css'>
+</head>
+
+<body>
+
+    <header><!-- Included Content --></header>
+
+    <section>
+        <div id="viewDesign" class="vgr-zArea" style="position:relative;">
+           <!-- Design view will be included in this area -->
+           <div style="position:absolute;top:0;left:0;right:0;bottom:0;z-index:1;">
+                <div id="tree"></div>
+            </div>
+
+           <div class="loaded" style="z-index:10000;"></div>
+        </div>
+    </section>
+    
+    <script src="/designView/js/jquery-1.12.4.js"></script>
+    <script src="/designView/js/jquery-ui.js"></script>
+    <script src="/designView/js/OrgChart.js"></script>
+    <script src="/designView/js/FileSaver.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('.loaded').load("/designView/design-view.html",function(response, status, xhr) {
+                console.log('Success 1');
+                if( status == 'success' ) {
+                    console.log('Success');
+                }
+            }); // load Design View
+        });
+    </script>
+
+<script src="/designView/js/app.js"></script>
+
+</body>
+</html>
