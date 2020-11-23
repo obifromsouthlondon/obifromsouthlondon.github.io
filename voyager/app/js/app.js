@@ -377,7 +377,7 @@ var modalAddForm = {
 $(function() {
     // TEMPLATES LOADING
 
-    $('header').load("/templates/tpl_header.html", function( response, status, xhr ) {
+    $('header').load("templates/tpl_header.html", function( response, status, xhr ) {
         if ( status == "error" ) {
             console.log( 'Source loading issue: ' + xhr.status + " " + xhr.statusText );
         }
@@ -387,10 +387,10 @@ $(function() {
     }); // load header tpl
 
     $('body').append('<div class="vgrIconsBox">');
-    $('.vgrIconsBox').load("/templates/tpl_icons.html"); // load icons tpl
+    $('.vgrIconsBox').load("templates/tpl_icons.html"); // load icons tpl
 
     $('body').append('<div class="tpl-subnav" style="display:none;">');
-    $('.tpl-subnav').load("/templates/tpl_subNav.html"); // load subNavigation tpl
+    $('.tpl-subnav').load("templates/tpl_subNav.html"); // load subNavigation tpl
 
     modalAddForm.init();
 });
