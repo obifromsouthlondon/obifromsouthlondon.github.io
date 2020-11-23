@@ -29,7 +29,7 @@ var modalAddForm = {
         });
 
 
-        xmlReceiving();
+        // xmlReceiving();
     },
     createPath: function(pathType,flowType) {
         var createPath = $('.tpl-line .vgr-line').clone().attr('type',pathType);
